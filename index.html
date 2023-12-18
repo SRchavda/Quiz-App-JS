@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+
+  <body>
+    <div id="app">
+      <div class="formWrapper">
+        <form name="quizForm" id="formm" action="./Form/question.html">
+          <div>
+            <p>Quiz Categories</p>
+            <input type="radio" id="HTML" name="quiz_category" value="HTML" />
+            <label for="HTML">HTML</label>
+
+            <input type="radio" id="CSS" name="quiz_category" value="CSS" />
+            <label for="CSS">CSS</label>
+
+            <input
+              type="radio"
+              id="javascript"
+              name="quiz_category"
+              value="javascript"
+            />
+            <label for="javascript">Javascript</label>
+          </div>
+          <div>
+            <p>Difficulty Level</p>
+            <input type="radio" id="easy" name="level" value="easy" />
+            <label for="easy">Easy</label>
+
+            <input type="radio" id="medium" name="level" value="medium" />
+            <label for="medium">Medium</label>
+
+            <input type="radio" id="hard" name="level" value="hard" />
+            <label for="hard">Hard</label>
+          </div>
+          <div>
+            <p>Number of questions</p>
+            <input
+              type="number"
+              placeholder="15"
+              name="noOfQues"
+              id="noOfQues"
+            />
+          </div>
+          <!-- <div>
+          <p>Time limit</p>
+          <input type="text" placeholder="MM:SS" name="timeLimit" />
+        </div> -->
+          <div>
+            <button type="submit" id="submitBtn">Submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,1602 @@
+[
+    {
+        "id": 1,
+        "category": "Web development",
+        "type": "multiple choice",
+        "tags": [
+            "HTML"
+        ],
+        "questionText": "What does the abbreviation HTML stand for?",
+        "options": [
+            {
+                "text": "HyperText Markup Language.",
+                "isCorrect": true
+            },
+            {
+                "text": "HighText Markup Language.",
+                "isCorrect": false
+            },
+            {
+                "text": "HyperText Markdown Language.",
+                "isCorrect": false
+            },
+            {
+                "text": "None of the above.",
+                "isCorrect": false
+            }
+        ],
+        "correctAnswers": [
+            "HyperText Markup Language."
+        ],
+        "explanation": "HTML stands for HyperText Markup Language.",
+        "codeAvailable": false
+    },
+    {
+        "id": 2,
+        "category": "Web development",
+        "type": "multiple choice",
+        "tags": [
+            "HTML"
+        ],
+        "questionText": "How many sizes of headers are available in HTML by default?",
+        "options": [
+            {
+                "text": "5",
+                "isCorrect": false
+            },
+            {
+                "text": "1",
+                "isCorrect": false
+            },
+            {
+                "text": "3",
+                "isCorrect": false
+            },
+            {
+                "text": "6",
+                "isCorrect": true
+            }
+        ],
+        "correctAnswers": [
+            "6"
+        ],
+        "explanation": "6 headers are available in HTML by default ranging from h1 to h6.",
+        "codeAvailable": false
+    },
+    {
+        "id": 3,
+        "category": "Web development",
+        "type": "multiple choice",
+        "tags": [
+            "HTML"
+        ],
+        "questionText": "What is the smallest header in HTML by default?",
+        "options": [
+            {
+                "text": "h1",
+                "isCorrect": false
+            },
+            {
+                "text": "h2",
+                "isCorrect": false
+            },
+            {
+                "text": "h6",
+                "isCorrect": true
+            },
+            {
+                "text": "h4",
+                "isCorrect": false
+            }
+        ],
+        "correctAnswers": [
+            "h6"
+        ],
+        "explanation": "h6 is the smallest header in HTML by default.",
+        "codeAvailable": false
+    },
+    {
+        "id": 4,
+        "category": "Web development",
+        "type": "multiple choice",
+        "tags": [
+            "HTML"
+        ],
+        "questionText": "What are the types of lists available in HTML?",
+        "options": [
+            {
+                "text": "Ordered, Unordered Lists.",
+                "isCorrect": true
+            },
+            {
+                "text": "Bulleted, Numbered Lists.",
+                "isCorrect": false
+            },
+            {
+                "text": "Named, Unnamed Lists.",
+                "isCorrect": false
+            },
+            {
+                "text": "None of the above.",
+                "isCorrect": false
+            }
+        ],
+        "correctAnswers": [
+            "Ordered, Unordered Lists."
+        ],
+        "explanation": "The lists available in HTML are Ordered and Unordered List.",
+        "codeAvailable": false
+    },
+    {
+        "id": 5,
+        "category": "Web development",
+        "type": "multiple choice",
+        "tags": [
+            "HTML"
+        ],
+        "questionText": "How to create an ordered list in HTML?",
+        "options": [
+            {
+                "text": "<ul>",
+                "isCorrect": false
+            },
+            {
+                "text": "<ol>",
+                "isCorrect": true
+            },
+            {
+                "text": "<href>",
+                "isCorrect": false
+            },
+            {
+                "text": "<b>",
+                "isCorrect": false
+            }
+        ],
+        "correctAnswers": [
+            "<ol>"
+        ],
+        "explanation": "An ordered list is created in HTML by using the <ol> tag.",
+        "codeAvailable": false
+    },
+    {
+        "id": 6,
+        "category": "Web development",
+        "type": "multiple choice",
+        "tags": [
+            "HTML"
+        ],
+        "questionText": "HTML files are saved by default with the extension?",
+        "options": [
+            {
+                "text": ".html",
+                "isCorrect": true
+            },
+            {
+                "text": ".h",
+                "isCorrect": false
+            },
+            {
+                "text": ".ht",
+                "isCorrect": false
+            },
+            {
+                "text": "None of the above",
+                "isCorrect": false
+            }
+        ],
+        "correctAnswers": [
+            ".html"
+        ],
+        "explanation": "HTML files are saved by the .html or .htm extension.",
+        "codeAvailable": false
+    },
+    {
+        "id": 7,
+        "category": "Web development",
+        "type": "multiple choice",
+        "tags": [
+            "HTML"
+        ],
+        "questionText": "We enclose HTML tags within?",
+        "options": [
+            {
+                "text": "{ }",
+                "isCorrect": false
+            },
+            {
+                "text": "< >",
+                "isCorrect": true
+            },
+            {
+                "text": "! !",
+                "isCorrect": false
+            },
+            {
+                "text": "None of the above",
+                "isCorrect": false
+            }
+        ],
+        "correctAnswers": [
+            "< >"
+        ],
+        "explanation": "HTML tags are enclosed within < > according to syntax.",
+        "codeAvailable": false
+    },
+    {
+        "id": 8,
+        "category": "Web development",
+        "type": "multiple choice",
+        "tags": [
+            "HTML"
+        ],
+        "questionText": "What is the effect of the <b> tag?",
+        "options": [
+            {
+                "text": "It converts the text within it to bold font.",
+                "isCorrect": true
+            },
+            {
+                "text": "It is used to write black-colored font.",
+                "isCorrect": false
+            },
+            {
+                "text": "It is used to change the font size.",
+                "isCorrect": false
+            },
+            {
+                "text": "None of the above.",
+                "isCorrect": false
+            }
+        ],
+        "correctAnswers": [
+            "It converts the text within it to bold font."
+        ],
+        "explanation": "<b> is used to convert the text within it to bold font.",
+        "codeAvailable": false
+    },
+    {
+        "id": 9,
+        "category": "Web development",
+        "type": "multiple choice",
+        "tags": [
+            "HTML"
+        ],
+        "questionText": "Which of the following is correct about HTML?",
+        "options": [
+            {
+                "text": "HTML uses User Defined Tags.",
+                "isCorrect": false
+            },
+            {
+                "text": "HTML uses tags defined within the language.",
+                "isCorrect": true
+            },
+            {
+                "text": "Both A and B.",
+                "isCorrect": false
+            },
+            {
+                "text": "None of the above.",
+                "isCorrect": false
+            }
+        ],
+        "correctAnswers": [
+            "HTML uses tags defined within the language."
+        ],
+        "explanation": "HTML can only use the tags defined within the language.",
+        "codeAvailable": false
+    },
+    {
+        "id": 10,
+        "category": "Web development",
+        "type": "multiple choice",
+        "tags": [
+            "HTML"
+        ],
+        "questionText": "How to display preformatted text in HTML?",
+        "options": [
+            {
+                "text": "<p>",
+                "isCorrect": false
+            },
+            {
+                "text": "<pre>",
+                "isCorrect": true
+            },
+            {
+                "text": "<hr>",
+                "isCorrect": false
+            },
+            {
+                "text": "All of the above",
+                "isCorrect": false
+            }
+        ],
+        "correctAnswers": [
+            "<pre>"
+        ],
+        "explanation": "<pre> tags is used to handle preformatted text in HTML.",
+        "codeAvailable": false
+    },
+    {
+        "id": 11,
+        "category": "Web development",
+        "type": "multiple choice",
+        "tags": [
+            "HTML"
+        ],
+        "questionText": "Which of the following tags doesn’t require a closing tag?",
+        "options": [
+            {
+                "text": "<br>",
+                "isCorrect": false
+            },
+            {
+                "text": "<hr>",
+                "isCorrect": false
+            },
+            {
+                "text": "Both A and B",
+                "isCorrect": true
+            },
+            {
+                "text": "None of the above",
+                "isCorrect": false
+            }
+        ],
+        "correctAnswers": [
+            "Both A and B"
+        ],
+        "explanation": "Both the <hr> and the <br> tag doesn’t require a closing tag.",
+        "codeAvailable": false
+    },
+    {
+        "id": 12,
+        "category": "Web development",
+        "type": "multiple choice",
+        "tags": [
+            "HTML"
+        ],
+        "questionText": "What is meant by an empty tag in HTML?",
+        "options": [
+            {
+                "text": "There is no such concept of an empty tag in HTML",
+                "isCorrect": false
+            },
+            {
+                "text": "An empty tag does not require a closing tag",
+                "isCorrect": true
+            },
+            {
+                "text": "An empty tag cannot have any content within it",
+                "isCorrect": false
+            },
+            {
+                "text": "None of the above",
+                "isCorrect": false
+            }
+        ],
+        "correctAnswers": [
+            "An empty tag does not require a closing tag"
+        ],
+        "explanation": "In HTML, empty tags are those tags that don’t require a closing tag for completion.",
+        "codeAvailable": false
+    },
+    {
+        "id": 13,
+        "category": "Web development",
+        "type": "multiple choice",
+        "tags": [
+            "HTML"
+        ],
+        "questionText": "What are the attributes used to change the size of an image?",
+        "options": [
+            {
+                "text": "Width and height",
+                "isCorrect": true
+            },
+            {
+                "text": "Big and Small",
+                "isCorrect": false
+            },
+            {
+                "text": "Top and bottom",
+                "isCorrect": false
+            },
+            {
+                "text": "None of the above",
+                "isCorrect": false
+            }
+        ],
+        "correctAnswers": [
+            "Width and height"
+        ],
+        "explanation": "Width and Height attributes are used to change the size of an image.",
+        "codeAvailable": false
+    },
+    {
+        "id": 14,
+        "category": "Web development",
+        "type": "multiple choice",
+        "tags": [
+            "HTML"
+        ],
+        "questionText": "Which attribute is used to provide a unique name to an HTML element?",
+        "options": [
+            {
+                "text": "id",
+                "isCorrect": true
+            },
+            {
+                "text": "class",
+                "isCorrect": false
+            },
+            {
+                "text": "type",
+                "isCorrect": false
+            },
+            {
+                "text": "None of the above",
+                "isCorrect": false
+            }
+        ],
+        "correctAnswers": [
+            "id"
+        ],
+        "explanation": "An id is used to provide a unique name for an HTML element that can be used to identify it.",
+        "codeAvailable": false
+    },
+    {
+        "id": 15,
+        "category": "Web development",
+        "type": "multiple choice",
+        "tags": [
+            "HTML"
+        ],
+        "questionText": "What is the function of the HTML style attribute?",
+        "options": [
+            {
+                "text": "It is used to add styles to an HTML element.",
+                "isCorrect": true
+            },
+            {
+                "text": "It is used to uniquely identify some specific styles of some element.",
+                "isCorrect": false
+            },
+            {
+                "text": "Both A and B.",
+                "isCorrect": false
+            },
+            {
+                "text": "None of the above.",
+                "isCorrect": false
+            }
+        ],
+        "correctAnswers": [
+            "It is used to add styles to an HTML element."
+        ],
+        "explanation": "The HTML style attribute is used to add styles like font, color, and size to an HTML element.",
+        "codeAvailable": false
+    },
+    {
+        "id": 16,
+        "category": "Web development",
+        "type": "multiple choice",
+        "tags": [
+            "HTML"
+        ],
+        "questionText": "Which of the following is the correct syntax for using the HTML style attribute?",
+        "options": [
+            {
+                "text": "<tagname style = “property: value;”>",
+                "isCorrect": true
+            },
+            {
+                "text": "<tagname style = “property;”>",
+                "isCorrect": false
+            },
+            {
+                "text": "<tagname style >",
+                "isCorrect": false
+            },
+            {
+                "text": "None of the above",
+                "isCorrect": false
+            }
+        ],
+        "correctAnswers": [
+            "<tagname style = “property: value;”>"
+        ],
+        "explanation": "The correct syntax for the style attribute is shown in Option A.",
+        "codeAvailable": false
+    },
+    {
+        "id": 17,
+        "category": "Web development",
+        "type": "multiple choice",
+        "tags": [
+            "HTML"
+        ],
+        "questionText": "Which HTML element is used to define description data?",
+        "options": [
+            {
+                "text": "<li>",
+                "isCorrect": false
+            },
+            {
+                "text": "<ol>",
+                "isCorrect": false
+            },
+            {
+                "text": "<dd>",
+                "isCorrect": true
+            },
+            {
+                "text": "<dl>",
+                "isCorrect": false
+            }
+        ],
+        "correctAnswers": [
+            "<dd>"
+        ],
+        "explanation": "Description data is defined by <dd> tag.",
+        "codeAvailable": false
+    },
+    {
+        "id": 18,
+        "category": "Web development",
+        "type": "multiple choice",
+        "tags": [
+            "HTML"
+        ],
+        "questionText": "Which of the following properties is used to change the font of text?",
+        "options": [
+            {
+                "text": "font-family",
+                "isCorrect": true
+            },
+            {
+                "text": "font-size",
+                "isCorrect": false
+            },
+            {
+                "text": "text-align",
+                "isCorrect": false
+            },
+            {
+                "text": "None of the above",
+                "isCorrect": false
+            }
+        ],
+        "correctAnswers": [
+            "font-family"
+        ],
+        "explanation": "The font-family property is used to change text font in HTML",
+        "codeAvailable": false
+    },
+    {
+        "id": 19,
+        "category": "Web development",
+        "type": "multiple choice",
+        "tags": [
+            "HTML"
+        ],
+        "questionText": "How are quotations defined in HTML?",
+        "options": [
+            {
+                "text": "<quote>",
+                "isCorrect": false
+            },
+            {
+                "text": "<block>",
+                "isCorrect": false
+            },
+            {
+                "text": "<blockquote>",
+                "isCorrect": true
+            },
+            {
+                "text": "None of the above",
+                "isCorrect": false
+            }
+        ],
+        "correctAnswers": [
+            "<blockquote>"
+        ],
+        "explanation": "The <blockquote> tag is used to define a section that is quoted from another source.",
+        "codeAvailable": false
+    },
+    {
+        "id": 20,
+        "category": "Web development",
+        "type": "multiple choice",
+        "tags": [
+            "HTML"
+        ],
+        "questionText": "What tag is used to render an image on a webpage?",
+        "options": [
+            {
+                "text": "img",
+                "isCorrect": true
+            },
+            {
+                "text": "src",
+                "isCorrect": false
+            },
+            {
+                "text": "image",
+                "isCorrect": false
+            },
+            {
+                "text": "None of the above",
+                "isCorrect": false
+            }
+        ],
+        "correctAnswers": [
+            "img"
+        ],
+        "explanation": "The img tag is used to display an image on a webpage.",
+        "codeAvailable": false
+    },
+    {
+        "id": 21,
+        "category": "Web development",
+        "type": "multiple choice",
+        "tags": [
+            "HTML"
+        ],
+        "questionText": "Apart from <i> tag, which of the following tag is used to render a text in italics?",
+        "options": [
+            {
+                "text": "<em>",
+                "isCorrect": true
+            },
+            {
+                "text": "<strong>",
+                "isCorrect": false
+            },
+            {
+                "text": "<b>",
+                "isCorrect": false
+            },
+            {
+                "text": "None of the above",
+                "isCorrect": false
+            }
+        ],
+        "correctAnswers": [
+            "<em>"
+        ],
+        "explanation": "The <em> tag is used to emphasize text, which puts same effect as <i> tag.",
+        "codeAvailable": false
+    },
+    {
+        "id": 22,
+        "category": "Web development",
+        "type": "multiple choice",
+        "tags": [
+            "HTML"
+        ],
+        "questionText": "What is the correct syntax to write an HTML comment?",
+        "options": [
+            {
+                "text": "<!-- Comment -->",
+                "isCorrect": true
+            },
+            {
+                "text": "// Comment",
+                "isCorrect": false
+            },
+            {
+                "text": "# Comment",
+                "isCorrect": false
+            },
+            {
+                "text": "/* Comment */",
+                "isCorrect": false
+            }
+        ],
+        "correctAnswers": [
+            "<!-- Comment -->"
+        ],
+        "explanation": "The correct syntax of writing an HTML comment is shown in option A.",
+        "codeAvailable": false
+    },
+    {
+        "id": 23,
+        "category": "Web development",
+        "type": "multiple choice",
+        "tags": [
+            "HTML"
+        ],
+        "questionText": "Colors are defined in HTML using?",
+        "options": [
+            {
+                "text": "RGB Values",
+                "isCorrect": false
+            },
+            {
+                "text": "HEX Values",
+                "isCorrect": false
+            },
+            {
+                "text": "RGBA values",
+                "isCorrect": false
+            },
+            {
+                "text": "All of the above",
+                "isCorrect": true
+            }
+        ],
+        "correctAnswers": [
+            "All of the above"
+        ],
+        "explanation": "Colors are defined using RGB, HEX, HSL, RGBA, HSLA values or with predefined color names.",
+        "codeAvailable": false
+    },
+    {
+        "id": 24,
+        "category": "Web development",
+        "type": "multiple choice",
+        "tags": [
+            "HTML"
+        ],
+        "questionText": "Which property is used to set colors in HTML?",
+        "options": [
+            {
+                "text": "color",
+                "isCorrect": true
+            },
+            {
+                "text": "background-color",
+                "isCorrect": false
+            },
+            {
+                "text": "font-color",
+                "isCorrect": false
+            },
+            {
+                "text": "text-color",
+                "isCorrect": false
+            }
+        ],
+        "correctAnswers": [
+            "color"
+        ],
+        "explanation": "The color property is used to set and change colors in HTML.",
+        "codeAvailable": false
+    },
+    {
+        "id": 25,
+        "category": "Web development",
+        "type": "multiple choice",
+        "tags": [
+            "HTML"
+        ],
+        "questionText": "What are the types of unordered lists in HTML?",
+        "options": [
+            {
+                "text": "Circle, square, disc.",
+                "isCorrect": true
+            },
+            {
+                "text": "Triangle, Square, disc.",
+                "isCorrect": false
+            },
+            {
+                "text": "Triangle, Circle, Disc.",
+                "isCorrect": false
+            },
+            {
+                "text": "All of the above.",
+                "isCorrect": false
+            }
+        ],
+        "correctAnswers": [
+            "Circle, square, disc."
+        ],
+        "explanation": "The unordered lists in HTML can form bullets of form Circle, Square and Disc.",
+        "codeAvailable": false
+    },
+    {
+        "id": 26,
+        "category": "Web development",
+        "type": "multiple choice",
+        "tags": [
+            "HTML"
+        ],
+        "questionText": "Which property is used to set border colors in HTML?",
+        "options": [
+            {
+                "text": "border-color",
+                "isCorrect": false
+            },
+            {
+                "text": "border",
+                "isCorrect": true
+            },
+            {
+                "text": "Both A and B",
+                "isCorrect": false
+            },
+            {
+                "text": "None of the above",
+                "isCorrect": false
+            }
+        ],
+        "correctAnswers": [
+            "border"
+        ],
+        "explanation": "The border property is used to change the border properties, including color in HTML.",
+        "codeAvailable": false
+    },
+    {
+        "id": 27,
+        "category": "Web development",
+        "type": "multiple choice",
+        "tags": [
+            "HTML"
+        ],
+        "questionText": "Which of the following things are necessary to create an HTML page?",
+        "options": [
+            {
+                "text": "A text editor.",
+                "isCorrect": false
+            },
+            {
+                "text": "Web Browser",
+                "isCorrect": false
+            },
+            {
+                "text": "Both A and B",
+                "isCorrect": true
+            },
+            {
+                "text": "None of the above",
+                "isCorrect": false
+            }
+        ],
+        "correctAnswers": [
+            "Both A and B"
+        ],
+        "explanation": "With a text editor and a web browser we can create an HTML page.",
+        "codeAvailable": false
+    },
+    {
+        "id": 28,
+        "category": "Web development",
+        "type": "multiple choice",
+        "tags": [
+            "HTML"
+        ],
+        "questionText": "Which of the following tags is used to indicate the page’s start and endpoints?",
+        "options": [
+            {
+                "text": "<body>",
+                "isCorrect": false
+            },
+            {
+                "text": "<html>",
+                "isCorrect": true
+            },
+            {
+                "text": "<head>",
+                "isCorrect": false
+            },
+            {
+                "text": "<doctype>",
+                "isCorrect": false
+            }
+        ],
+        "correctAnswers": [
+            "<html>"
+        ],
+        "explanation": "<html> tag indicates the web browser where a webpage starts and ends.",
+        "codeAvailable": false
+    },
+    {
+        "id": 29,
+        "category": "Web development",
+        "type": "multiple choice",
+        "tags": [
+            "HTML"
+        ],
+        "questionText": "Which of the following is true about HTML tags?",
+        "options": [
+            {
+                "text": "Are case sensitive",
+                "isCorrect": false
+            },
+            {
+                "text": "Are not case sensitive",
+                "isCorrect": true
+            },
+            {
+                "text": "Are in uppercase",
+                "isCorrect": false
+            },
+            {
+                "text": "Are in lowercase",
+                "isCorrect": false
+            }
+        ],
+        "correctAnswers": [
+            "Are not case sensitive"
+        ],
+        "explanation": "HTML tags are not case-sensitive in nature.",
+        "codeAvailable": false
+    },
+    {
+        "id": 30,
+        "category": "Web development",
+        "type": "multiple choice",
+        "tags": [
+            "HTML"
+        ],
+        "questionText": "Which HTML tag is called the root element of an HTML document?",
+        "options": [
+            {
+                "text": "<html>",
+                "isCorrect": true
+            },
+            {
+                "text": "<body>",
+                "isCorrect": false
+            },
+            {
+                "text": "<title>",
+                "isCorrect": false
+            },
+            {
+                "text": "<head>",
+                "isCorrect": false
+            }
+        ],
+        "correctAnswers": [
+            "<html>"
+        ],
+        "explanation": "The <html> tag is the root element of an HTML document, which means that it contains all the contents and tags of the HTML document within it.",
+        "codeAvailable": false
+    },
+    {
+        "id": 31,
+        "category": "Web development",
+        "type": "multiple choice",
+        "tags": [
+            "HTML"
+        ],
+        "questionText": "How is black color represented in terms of RGB values?",
+        "options": [
+            {
+                "text": "RGB(0, 0, 0)",
+                "isCorrect": true
+            },
+            {
+                "text": "RGB(100, 100, 100)",
+                "isCorrect": false
+            },
+            {
+                "text": "RGB(100, 100, 0)",
+                "isCorrect": false
+            },
+            {
+                "text": "RGB(100, 0, 0)",
+                "isCorrect": false
+            }
+        ],
+        "correctAnswers": [
+            "RGB(0, 0, 0)"
+        ],
+        "explanation": "RCB(0, 0, 0) is equivalent to black color in terms of RGB values.",
+        "codeAvailable": false
+    },
+    {
+        "id": 32,
+        "category": "Web development",
+        "type": "multiple choice",
+        "tags": [
+            "HTML"
+        ],
+        "questionText": "What does the Alpha value in RGBA represent?",
+        "options": [
+            {
+                "text": "Opacity value for a color.",
+                "isCorrect": true
+            },
+            {
+                "text": "The shade of a color.",
+                "isCorrect": false
+            },
+            {
+                "text": "Both A and B.",
+                "isCorrect": false
+            },
+            {
+                "text": "None of the above.",
+                "isCorrect": false
+            }
+        ],
+        "correctAnswers": [
+            "Opacity value for a color."
+        ],
+        "explanation": "A in RGBA represents the value of the Alpha Channel which is a measure of the Opacity of a color.",
+        "codeAvailable": false
+    },
+    {
+        "id": 33,
+        "category": "Web development",
+        "type": "multiple choice",
+        "tags": [
+            "HTML"
+        ],
+        "questionText": "What does the Alpha value of 0.0 represent?",
+        "options": [
+            {
+                "text": "Fully Opaque.",
+                "isCorrect": false
+            },
+            {
+                "text": "Fully Transparent.",
+                "isCorrect": true
+            },
+            {
+                "text": "50% transparent.",
+                "isCorrect": false
+            },
+            {
+                "text": "None of the above.",
+                "isCorrect": false
+            }
+        ],
+        "correctAnswers": [
+            "Fully Transparent."
+        ],
+        "explanation": "The Alpha value varies between 0.0 (fully transparent) to 1.0(fully opaque).",
+        "codeAvailable": false
+    },
+    {
+        "id": 34,
+        "category": "Web development",
+        "type": "multiple choice",
+        "tags": [
+            "HTML"
+        ],
+        "questionText": "How to set a font for a whole page?",
+        "options": [
+            {
+                "text": "<targetfont>",
+                "isCorrect": false
+            },
+            {
+                "text": "<defaultfont>",
+                "isCorrect": true
+            },
+            {
+                "text": "<font>",
+                "isCorrect": false
+            },
+            {
+                "text": "None of the above",
+                "isCorrect": false
+            }
+        ],
+        "correctAnswers": [
+            "<defaultfont>"
+        ],
+        "explanation": "<defaultfont> tag is used to set up a default font type for a whole page.",
+        "codeAvailable": false
+    },
+    {
+        "id": 35,
+        "category": "Web development",
+        "type": "multiple choice",
+        "tags": [
+            "HTML"
+        ],
+        "questionText": "The CSS inside HTML elements used alongside style attribute is called?",
+        "options": [
+            {
+                "text": "Inline CSS",
+                "isCorrect": true
+            },
+            {
+                "text": "Internal CSS",
+                "isCorrect": false
+            },
+            {
+                "text": "External CSS",
+                "isCorrect": false
+            },
+            {
+                "text": "None of the above",
+                "isCorrect": false
+            }
+        ],
+        "correctAnswers": [
+            "Inline CSS"
+        ],
+        "explanation": "The CSS used alongside the style attribute with HTML elements is called Inline CSS.",
+        "codeAvailable": false
+    },
+    {
+        "id": 36,
+        "category": "Web development",
+        "type": "multiple choice",
+        "tags": [
+            "HTML"
+        ],
+        "questionText": "Which of the following colors contain equal amounts of RBG?",
+        "options": [
+            {
+                "text": "White",
+                "isCorrect": false
+            },
+            {
+                "text": "Gray",
+                "isCorrect": false
+            },
+            {
+                "text": "Black",
+                "isCorrect": false
+            },
+            {
+                "text": "All of the above",
+                "isCorrect": true
+            }
+        ],
+        "correctAnswers": [
+            "All of the above"
+        ],
+        "explanation": "Gray is RGB(50, 50, 50), White is RGB(100, 100, 100) and Black is RGB(0, 0, 0).",
+        "codeAvailable": false
+    },
+    {
+        "id": 37,
+        "category": "Web development",
+        "type": "multiple choice",
+        "tags": [
+            "HTML"
+        ],
+        "questionText": "What is the speciality about the <small> and <big> tags in HTML?",
+        "options": [
+            {
+                "text": "They work on anything.",
+                "isCorrect": false
+            },
+            {
+                "text": "They can be used for text only.",
+                "isCorrect": false
+            },
+            {
+                "text": "They can be repeated.",
+                "isCorrect": true
+            },
+            {
+                "text": "None of the above.",
+                "isCorrect": false
+            }
+        ],
+        "correctAnswers": [
+            "They can be repeated."
+        ],
+        "explanation": "The tags can be repeated and their effects and stacked on top of each other.",
+        "codeAvailable": false
+    },
+    {
+        "id": 38,
+        "category": "Web development",
+        "type": "multiple choice",
+        "tags": [
+            "HTML"
+        ],
+        "questionText": "Which of the following tags is used to add a row to a table in HTML?",
+        "options": [
+            {
+                "text": "<tr>",
+                "isCorrect": true
+            },
+            {
+                "text": "<td>",
+                "isCorrect": false
+            },
+            {
+                "text": "<th>",
+                "isCorrect": false
+            },
+            {
+                "text": "None of the above",
+                "isCorrect": false
+            }
+        ],
+        "correctAnswers": [
+            "<tr>"
+        ],
+        "explanation": "<tr> is used to add a row to a table in HTML.",
+        "codeAvailable": false
+    },
+    {
+        "id": 39,
+        "category": "Web development",
+        "type": "multiple choice",
+        "tags": [
+            "HTML"
+        ],
+        "questionText": "Which property allows an image link to show a text label?",
+        "options": [
+            {
+                "text": "alt",
+                "isCorrect": true
+            },
+            {
+                "text": "str",
+                "isCorrect": false
+            },
+            {
+                "text": "alternative",
+                "isCorrect": false
+            },
+            {
+                "text": "None of the above",
+                "isCorrect": false
+            }
+        ],
+        "correctAnswers": [
+            "alt"
+        ],
+        "explanation": "The alt property allows an image link to show a text label.",
+        "codeAvailable": false
+    },
+    {
+        "id": 40,
+        "category": "Web development",
+        "type": "multiple choice",
+        "tags": [
+            "HTML"
+        ],
+        "questionText": "If a background image is smaller than the screen on which it is being displayed, what will occur on the webpage?",
+        "options": [
+            {
+                "text": "The blank space will be shown in black.",
+                "isCorrect": false
+            },
+            {
+                "text": "The image will be stretched",
+                "isCorrect": false
+            },
+            {
+                "text": "The image will be repeated",
+                "isCorrect": true
+            },
+            {
+                "text": "The image won’t be displayed",
+                "isCorrect": false
+            }
+        ],
+        "correctAnswers": [
+            "The image will be repeated"
+        ],
+        "explanation": "By default on most screens, if the background image is smaller than the screen on which it is being displayed, the image will be repeated.",
+        "codeAvailable": false
+    },
+    {
+        "id": 41,
+        "category": "Web development",
+        "type": "multiple choice",
+        "tags": [
+            "HTML"
+        ],
+        "questionText": "What are the properties of block-level elements?",
+        "options": [
+            {
+                "text": "It always starts on a new line.",
+                "isCorrect": false
+            },
+            {
+                "text": "It always takes the full width available.",
+                "isCorrect": false
+            },
+            {
+                "text": "It has a top and bottom margin.",
+                "isCorrect": false
+            },
+            {
+                "text": "All of the above.",
+                "isCorrect": true
+            }
+        ],
+        "correctAnswers": [
+            "All of the above."
+        ],
+        "explanation": "All the above properties are valid properties of block-level elements.",
+        "codeAvailable": false
+    },
+    {
+        "id": 42,
+        "category": "Web development",
+        "type": "multiple choice",
+        "tags": [
+            "HTML"
+        ],
+        "questionText": "Which of the following are examples of block-level elements in HTML?",
+        "options": [
+            {
+                "text": "<div>",
+                "isCorrect": false
+            },
+            {
+                "text": "<p>",
+                "isCorrect": false
+            },
+            {
+                "text": "<h1>",
+                "isCorrect": false
+            },
+            {
+                "text": "All of the above",
+                "isCorrect": true
+            }
+        ],
+        "correctAnswers": [
+            "All of the above"
+        ],
+        "explanation": "All the above examples satisfy the properties in Prob. 41 and hence are block-level elements",
+        "codeAvailable": false
+    },
+    {
+        "id": 43,
+        "category": "Web development",
+        "type": "multiple choice",
+        "tags": [
+            "HTML"
+        ],
+        "questionText": "How many characters can be written in 1KB?",
+        "options": [
+            {
+                "text": "1048",
+                "isCorrect": false
+            },
+            {
+                "text": "1024",
+                "isCorrect": true
+            },
+            {
+                "text": "1000",
+                "isCorrect": false
+            },
+            {
+                "text": "None of the above",
+                "isCorrect": false
+            }
+        ],
+        "correctAnswers": [
+            "1024"
+        ],
+        "explanation": "1024 characters can be written in a file of size 1KB.",
+        "codeAvailable": false
+    },
+    {
+        "id": 44,
+        "category": "Web development",
+        "type": "multiple choice",
+        "tags": [
+            "HTML"
+        ],
+        "questionText": "What are some valid character sets available?",
+        "options": [
+            {
+                "text": "UTF-8",
+                "isCorrect": false
+            },
+            {
+                "text": "ANSI",
+                "isCorrect": false
+            },
+            {
+                "text": "ASCII",
+                "isCorrect": false
+            },
+            {
+                "text": "All of the above",
+                "isCorrect": true
+            }
+        ],
+        "correctAnswers": [
+            "All of the above"
+        ],
+        "explanation": "All of the above options are examples of valid character sets.",
+        "codeAvailable": false
+    },
+    {
+        "id": 45,
+        "category": "Web development",
+        "type": "multiple choice",
+        "tags": [
+            "HTML"
+        ],
+        "questionText": "The default value of the BORDER attribute is?",
+        "options": [
+            {
+                "text": "1pixel",
+                "isCorrect": true
+            },
+            {
+                "text": "2pixel",
+                "isCorrect": false
+            },
+            {
+                "text": "4pixel",
+                "isCorrect": false
+            },
+            {
+                "text": "8pixel",
+                "isCorrect": false
+            }
+        ],
+        "correctAnswers": [
+            "1pixel"
+        ],
+        "explanation": "1pixel is the default value for the BORDER attribute in HTML.",
+        "codeAvailable": false
+    },
+    {
+        "id": 46,
+        "category": "Web development",
+        "type": "multiple choice",
+        "tags": [
+            "HTML"
+        ],
+        "questionText": "What are those objects called which are used for storing data on the client provided by the HTML local storage?",
+        "options": [
+            {
+                "text": "Windows.localStorage",
+                "isCorrect": false
+            },
+            {
+                "text": "Window.sessionStorage",
+                "isCorrect": false
+            },
+            {
+                "text": "Both A and B",
+                "isCorrect": true
+            },
+            {
+                "text": "None of the above",
+                "isCorrect": false
+            }
+        ],
+        "correctAnswers": [
+            "Both A and B"
+        ],
+        "explanation": "Such objects with the property mentioned above are called as Windows.localStorage or Window.sessionStorage.",
+        "codeAvailable": false
+    },
+    {
+        "id": 47,
+        "category": "Web development",
+        "type": "multiple choice",
+        "tags": [
+            "HTML"
+        ],
+        "questionText": "The most basic part of any HTML page is?",
+        "options": [
+            {
+                "text": "ASCII Text",
+                "isCorrect": true
+            },
+            {
+                "text": "Binary Text",
+                "isCorrect": false
+            },
+            {
+                "text": "Text",
+                "isCorrect": false
+            },
+            {
+                "text": "None of the above",
+                "isCorrect": false
+            }
+        ],
+        "correctAnswers": [
+            "ASCII Text"
+        ],
+        "explanation": "ASCII Text comprises the most basic part of any HTML page, as it is the simplest character set a webpage can use.",
+        "codeAvailable": false
+    },
+    {
+        "id": 48,
+        "category": "Web development",
+        "type": "multiple choice",
+        "tags": [
+            "HTML"
+        ],
+        "questionText": "What is the select tag used for?",
+        "options": [
+            {
+                "text": "Creates a combo box.",
+                "isCorrect": true
+            },
+            {
+                "text": "Select some attributes and change their style.",
+                "isCorrect": false
+            },
+            {
+                "text": "Change text font.",
+                "isCorrect": false
+            },
+            {
+                "text": "None of the above.",
+                "isCorrect": false
+            }
+        ],
+        "correctAnswers": [
+            "Creates a combo box."
+        ],
+        "explanation": "A HTML combo box is created using the select tag.",
+        "codeAvailable": false
+    },
+    {
+        "id": 49,
+        "category": "Web development",
+        "type": "multiple choice",
+        "tags": [
+            "HTML"
+        ],
+        "questionText": "What are the main components of the front end of any working website?",
+        "options": [
+            {
+                "text": "HTML, CSS, Javascript.",
+                "isCorrect": true
+            },
+            {
+                "text": "HTML only.",
+                "isCorrect": false
+            },
+            {
+                "text": "Javascript only.",
+                "isCorrect": false
+            },
+            {
+                "text": "Node.js.",
+                "isCorrect": false
+            }
+        ],
+        "correctAnswers": [
+            "HTML, CSS, Javascript."
+        ],
+        "explanation": "HTML, CSS, and Javascript combined to form the basic components of any working website’s frontend.",
+        "codeAvailable": false
+    },
+    {
+        "id": 50,
+        "category": "Web development",
+        "type": "multiple choice",
+        "tags": [
+            "HTML"
+        ],
+        "questionText": "Which HTML tag is used to set up a Javascript-like client-side scripting language?",
+        "options": [
+            {
+                "text": "<script>",
+                "isCorrect": true
+            },
+            {
+                "text": "<select>",
+                "isCorrect": false
+            },
+            {
+                "text": "<anchor>",
+                "isCorrect": false
+            },
+            {
+                "text": "None of the above",
+                "isCorrect": false
+            }
+        ],
+        "correctAnswers": [
+            "<script>"
+        ],
+        "explanation": "<script> tag is used for the purpose of setting up a client-side scripting language.",
+        "codeAvailable": false
+    }
+]
