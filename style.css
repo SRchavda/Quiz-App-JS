@@ -9,9 +9,9 @@
   line-height: 1.5;
   font-weight: 400;
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  color-scheme: light;
+  /* color: rgba(255, 255, 255, 0.87);
+  background-color: #242424; */
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -76,7 +76,7 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
+  /* background-color: #1a1a1a; */
   cursor: pointer;
   transition: border-color 0.25s;
 }
@@ -102,16 +102,26 @@ button:focus-visible {
 }
 
 .option {
-  border: 1px solid whitesmoke;
-  border-radius: 5px;
+  cursor: pointer;
+  /* border: 1px solid whitesmoke;
+  border-radius: 5px; */
   display: flex;
   justify-content: start;
   align-items: center;
   gap: 10px;
+  margin: 5px 0 5px 0;
+}
+
+.option:hover {
+  background-color: rgba(255, 255, 255, 0.197);
+}
+
+.option:focus {
+  background-color: rgba(255, 255, 255, 0.197);
 }
 
 .option p {
-  padding: 5px;
+  /* padding: 5px; */
 }
 
 .option .opt-number {

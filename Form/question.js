@@ -66,10 +66,10 @@ const optionHtml = (optArr) => {
 
   function getOptStr(option, optNo) {
     return `
-      <div class="option">
+      <button type="button" class="option" value="${option.text}">
         <p class="opt-number">${optNo + 1}</p>
-         <div class="opt-text">${option.text}</div>
-      </div>
+        <div class="opt-text">${option.text}</div>
+      </button>
     `;
   }
 
@@ -85,6 +85,9 @@ function setUpQuestionBody() {
   document.querySelector("#question-body").innerHTML = questionBodyHtml(
     curQuestion.ques
   );
+  Array.from(document.getElementsByClassName("option")).forEach((element) => {
+    element.addEventListener("click", (e) => optionClick(e));
+  });
 }
 setUpQuestionBody();
 
@@ -100,4 +103,20 @@ function onNextClick() {
   };
   setUpQuestionBody();
   setUpQuestionHeader();
+}
+
+function optionClick(event) {
+  let optionIndex = curQuestion?.ques?.options?.findIndex(
+    (x) => x.text == event.currentTarget.value
+  );
+
+  Array.from(document.getElementsByClassName("option")).forEach(
+    (x) => (x.disabled = true)
+  );
+
+  let isCorrect = curQuestion?.ques?.options[optionIndex]?.isCorrect;
+
+  if (isCorrect) {
+    alert("Congratulations!");
+  }
 }
