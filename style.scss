@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
 *{
   margin: 0;
   padding: 0;
@@ -34,6 +37,7 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  font-family: 'Rubik', sans-serif;
 }
 
 h1 {
@@ -76,7 +80,6 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  /* background-color: #1a1a1a; */
   cursor: pointer;
   transition: border-color 0.25s;
 }
@@ -128,4 +131,30 @@ button:focus-visible {
   width: 10%;
   text-align: center;
   border-right: 1px solid whitesmoke;
+}
+
+.formWrapper {
+
+  border: 1px solid rgb(68, 68, 68);
+  padding: 30px;
+  border-radius: 10px;
+
+  form {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  p {
+    text-align: left;
+  }
+
+  input[type=number] {
+    background-color: #f0f0f0;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+  }
 }

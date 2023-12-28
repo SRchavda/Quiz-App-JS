@@ -1,7 +1,6 @@
 "use strict";
 
-import "./style.css";
-import { setUpForm } from "./Form/form.js";
+import "./style.scss";
 
 const inputNodeWithLabel = (label, type, name, id, value) => {
   let node = `
