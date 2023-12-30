@@ -13,6 +13,11 @@ function initTimer() {
 
 function startTimer(element) {
   intervalId = setInterval(function () {
+    if (seconds == 10) {
+      const event = new Event("questionTimeUp");
+      document.dispatchEvent(event);
+    }
+
     element.innerHTML = `${seconds} seconds`;
     seconds++;
   }, 1000);
@@ -21,4 +26,5 @@ function startTimer(element) {
 export function setUpQuestionTimer(element) {
   initTimer();
   startTimer(element);
+  return seconds;
 }

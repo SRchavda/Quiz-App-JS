@@ -13,6 +13,8 @@ const category = formData.get("quiz_category");
 const noOfQues = formData.get("noOfQues");
 const totalTime = noOfQues * 60; //seconds
 
+let score = 0;
+
 // fetch data from json
 async function fetchdata() {
   try {
@@ -29,10 +31,13 @@ const questionArr = questions.slice(0, noOfQues);
 let curQuestion = { index: 0, ques: questionArr[0] };
 
 // Setting up the question's html
-const questionHeaderHtml = () => {
+function questionHeaderHtml() {
   const htmlStr = `
         <div id="progress-wrapper">
           <!-- <progress id="quesProgress" value="0" max="15"></progress> -->
+        </div>
+        <div id="score-wrapper">
+          <p class="score">Score : <span id="scoreCount">0</span></p>
         </div>
         <div class="ques-timer-wrapper">
           <p id="quesTimer"></p>
@@ -47,9 +52,9 @@ const questionHeaderHtml = () => {
     `;
 
   return htmlStr;
-};
+}
 
-const questionBodyHtml = (question) => {
+function questionBodyHtml(question) {
   const htmlStr = `
       <div class="ques-text">
         ${question?.questionText}
@@ -60,9 +65,9 @@ const questionBodyHtml = (question) => {
   `;
 
   return htmlStr;
-};
+}
 
-const optionHtml = (optArr) => {
+function optionHtml(optArr) {
   const resultStr = optArr?.reduce(
     (acc, curValue, curIndex) => acc + getOptStr(curValue, curIndex),
     ""
@@ -78,13 +83,15 @@ const optionHtml = (optArr) => {
   }
 
   return resultStr;
-};
+}
 
 // init question header
 document.querySelector("#question-header").innerHTML = questionHeaderHtml();
 function setUpQuestionHeader() {
   const timerDiv = document.querySelector("#progress-wrapper");
-  setUpQuestionTimer(timerDiv);
+  let secondss = setUpQuestionTimer(timerDiv);
+
+  document.querySelector("#scoreCount").innerHTML = score;
 }
 setUpQuestionHeader();
 
@@ -98,6 +105,25 @@ function setUpQuestionBody() {
   });
 }
 setUpQuestionBody();
+
+// option click event
+function optionClick(event) {
+  let optionIndex = curQuestion?.ques?.options?.findIndex(
+    (x) => x.text == event.currentTarget.value
+  );
+
+  Array.from(document.getElementsByClassName("option")).forEach(
+    (x) => (x.disabled = true)
+  );
+
+  let isCorrect = curQuestion?.ques?.options[optionIndex]?.isCorrect;
+
+  if (isCorrect) {
+    score++;
+    document.querySelector("#scoreCount").innerHTML = score;
+    alert("Congratulations!");
+  }
+}
 
 // set next btn and add event listner to it
 document.querySelector("#next-btn-wrapper").innerHTML = nextBtnStr;
@@ -114,19 +140,6 @@ function onNextClick() {
   setUpQuestionHeader();
 }
 
-// option click event
-function optionClick(event) {
-  let optionIndex = curQuestion?.ques?.options?.findIndex(
-    (x) => x.text == event.currentTarget.value
-  );
-
-  Array.from(document.getElementsByClassName("option")).forEach(
-    (x) => (x.disabled = true)
-  );
-
-  let isCorrect = curQuestion?.ques?.options[optionIndex]?.isCorrect;
-
-  if (isCorrect) {
-    alert("Congratulations!");
-  }
-}
+document.addEventListener("questionTimeUp", function () {
+  onNextClick();
+});
