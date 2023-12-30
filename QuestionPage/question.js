@@ -13,7 +13,8 @@ const category = formData.get("quiz_category");
 const noOfQues = formData.get("noOfQues");
 const totalTime = noOfQues * 60; //seconds
 
-let score = 0;
+let correctAns = 0;
+let IncorrectAns = 0;
 
 // fetch data from json
 async function fetchdata() {
@@ -36,8 +37,11 @@ function questionHeaderHtml() {
         <div id="progress-wrapper">
           <!-- <progress id="quesProgress" value="0" max="15"></progress> -->
         </div>
-        <div id="score-wrapper">
-          <p class="score">Score : <span id="scoreCount">0</span></p>
+        <div id="correct-wrapper">
+          <p class="correct">Correct : <span id="correctCount">0</span></p>
+        </div>
+        <div id="Incorrect-wrapper">
+          <p class="Incorrect">Incorrect : <span id="inCorrectCount">0</span></p>
         </div>
         <div class="ques-timer-wrapper">
           <p id="quesTimer"></p>
@@ -91,7 +95,8 @@ function setUpQuestionHeader() {
   const timerDiv = document.querySelector("#progress-wrapper");
   let secondss = setUpQuestionTimer(timerDiv);
 
-  document.querySelector("#scoreCount").innerHTML = score;
+  document.querySelector("#correctCount").innerHTML = correctAns;
+  document.querySelector("#inCorrectCount").innerHTML = IncorrectAns;
 }
 setUpQuestionHeader();
 
@@ -119,9 +124,12 @@ function optionClick(event) {
   let isCorrect = curQuestion?.ques?.options[optionIndex]?.isCorrect;
 
   if (isCorrect) {
-    score++;
-    document.querySelector("#scoreCount").innerHTML = score;
-    alert("Congratulations!");
+    correctAns++;
+    document.querySelector("#correctCount").innerHTML = correctAns;
+    //alert("Congratulations!");
+  } else {
+    IncorrectAns++;
+    document.querySelector("#inCorrectCount").innerHTML = IncorrectAns;
   }
 }
 
