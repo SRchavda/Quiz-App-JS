@@ -1,7 +1,7 @@
 "use strict";
 
 import { setUpQuestionTimer } from "../Questions/timer";
-import "../style.css";
+import "../style.scss";
 
 const nextBtnStr = `
   <button type="button" class="next-btn">Next -></button>
@@ -13,6 +13,7 @@ const category = formData.get("quiz_category");
 const noOfQues = formData.get("noOfQues");
 const totalTime = noOfQues * 60; //seconds
 
+// fetch data from json
 async function fetchdata() {
   try {
     const response = await fetch(`../Questions/HTML.json`);
@@ -22,15 +23,16 @@ async function fetchdata() {
   }
 }
 
+// get & set data for questions
 const questions = await fetchdata();
 const questionArr = questions.slice(0, noOfQues);
-console.log(questionArr);
 let curQuestion = { index: 0, ques: questionArr[0] };
 
+// Setting up the question's html
 const questionHeaderHtml = () => {
   const htmlStr = `
-        <div class="progress-wrapper">
-          <progress id="quesProgress" value="0" max="15"></progress>
+        <div id="progress-wrapper">
+          <!-- <progress id="quesProgress" value="0" max="15"></progress> -->
         </div>
         <div class="ques-timer-wrapper">
           <p id="quesTimer"></p>
@@ -78,15 +80,15 @@ const optionHtml = (optArr) => {
   return resultStr;
 };
 
+// init question header
 document.querySelector("#question-header").innerHTML = questionHeaderHtml();
 function setUpQuestionHeader() {
-  console.log(totalTime, "jkjkjkjkjk");
-  document.querySelector("#quesProgress").value = curQuestion.index + 1;
-  var a = document.querySelector("#quesTimer");
-
-  setUpQuestionTimer(a);
+  const timerDiv = document.querySelector("#progress-wrapper");
+  setUpQuestionTimer(timerDiv);
 }
+setUpQuestionHeader();
 
+// init question body
 function setUpQuestionBody() {
   document.querySelector("#question-body").innerHTML = questionBodyHtml(
     curQuestion.ques
@@ -97,6 +99,7 @@ function setUpQuestionBody() {
 }
 setUpQuestionBody();
 
+// set next btn and add event listner to it
 document.querySelector("#next-btn-wrapper").innerHTML = nextBtnStr;
 document
   .querySelector(".next-btn")
@@ -111,6 +114,7 @@ function onNextClick() {
   setUpQuestionHeader();
 }
 
+// option click event
 function optionClick(event) {
   let optionIndex = curQuestion?.ques?.options?.findIndex(
     (x) => x.text == event.currentTarget.value
