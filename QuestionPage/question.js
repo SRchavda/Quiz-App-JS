@@ -1,6 +1,6 @@
 "use strict";
 
-import { setUpQuestionTimer } from "../Questions/timer";
+import { getTime, setUpQuestionTimer } from "../Questions/timer";
 import "../style.scss";
 
 const nextBtnStr = `
@@ -13,13 +13,18 @@ const category = formData.get("quiz_category");
 const noOfQues = formData.get("noOfQues");
 const totalTime = noOfQues * 60; //seconds
 
+localStorage.setItem("totalQue", noOfQues);
+localStorage.setItem("totalTime", totalTime);
+
 let correctAns = 0;
 let IncorrectAns = 0;
+let skiped = 0;
+let streak = 0;
 
 // fetch data from json
 async function fetchdata() {
   try {
-    const response = await fetch(`../Questions/HTML.json`);
+    const response = await fetch(`../Questions/${category}.json`);
     return await response.json();
   } catch (err) {
     console.log(err);
@@ -30,6 +35,7 @@ async function fetchdata() {
 const questions = await fetchdata();
 const questionArr = questions.slice(0, noOfQues);
 let curQuestion = { index: 0, ques: questionArr[0] };
+let answerdQue = [];
 
 // Setting up the question's html
 function questionHeaderHtml() {
@@ -121,14 +127,27 @@ function optionClick(event) {
     (x) => (x.disabled = true)
   );
 
+  const newOption = [...curQuestion?.ques?.options];
+  newOption[optionIndex] = { ...newOption[optionIndex], isAns: true };
+  const newQuestion = {
+    ...curQuestion?.ques,
+    options: newOption,
+    time: getTime(),
+  };
+  answerdQue.push(newQuestion);
+
   let isCorrect = curQuestion?.ques?.options[optionIndex]?.isCorrect;
 
   if (isCorrect) {
     correctAns++;
+    streak++;
     document.querySelector("#correctCount").innerHTML = correctAns;
     //alert("Congratulations!");
   } else {
     IncorrectAns++;
+    const oldStreak = localStorage.getItem("streak");
+    oldStreak > streak ? null : localStorage.setItem("streak", streak);
+    streak = 0;
     document.querySelector("#inCorrectCount").innerHTML = IncorrectAns;
   }
 }
@@ -140,14 +159,32 @@ document
   .addEventListener("click", () => onNextClick());
 
 function onNextClick() {
-  curQuestion = {
-    index: curQuestion.index + 1,
-    ques: questionArr[curQuestion.index + 1],
-  };
-  setUpQuestionBody();
-  setUpQuestionHeader();
+  const isLast = curQuestion.index == questionArr.length - 1;
+
+  if (!isLast) {
+    curQuestion = {
+      index: curQuestion.index + 1,
+      ques: questionArr[curQuestion.index + 1],
+    };
+    setUpQuestionBody();
+    setUpQuestionHeader();
+  } else {
+    const queSum = {
+      correct: correctAns,
+      incorrect: IncorrectAns,
+      skiped: skiped,
+    };
+
+    const oldStreak = localStorage.getItem("streak");
+    localStorage.setItem("streak", streak > oldStreak ? streak : oldStreak);
+    localStorage.setItem("ansQue", JSON.stringify(answerdQue));
+    localStorage.setItem("queSum", JSON.stringify(queSum));
+
+    location.href = "../Summary/summary.html";
+  }
 }
 
 document.addEventListener("questionTimeUp", function () {
   onNextClick();
+  skiped++;
 });

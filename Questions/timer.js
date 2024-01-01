@@ -7,7 +7,7 @@ function initTimer() {
   if (intervalId) {
     clearInterval(intervalId);
     intervalId = null;
-    seconds = 0;
+    seconds = 1;
   }
 }
 
@@ -26,5 +26,9 @@ function startTimer(element) {
 export function setUpQuestionTimer(element) {
   initTimer();
   startTimer(element);
+  return seconds;
+}
+
+export function getTime() {
   return seconds;
 }
