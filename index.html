@@ -11,46 +11,87 @@
     <div id="app">
       <div class="formWrapper">
         <form name="quizForm" id="formm" action="./QuestionPage/question.html">
+          <div class="title">Create Quiz</div>
           <div>
-            <p>Select Quiz Categories</p>
-            <input type="radio" id="HTML" name="quiz_category" value="HTML" />
-            <label for="HTML">HTML</label>
+            <p class="form-que required">Select Quiz Categories</p>
+            <label for="HTML">
+              <input
+                type="radio"
+                id="HTML"
+                name="quiz_category"
+                value="HTML"
+                required
+              />
+              HTML</label
+            >
 
-            <input type="radio" id="CSS" name="quiz_category" value="CSS" />
-            <label for="CSS">CSS</label>
+            <label for="CSS"
+              ><input
+                type="radio"
+                id="CSS"
+                name="quiz_category"
+                value="CSS"
+                required
+              />
+              CSS</label
+            >
 
-            <input
-              type="radio"
-              id="javascript"
-              name="quiz_category"
-              value="javascript"
-            />
-            <label for="javascript">Javascript</label>
+            <label for="javascript"
+              ><input
+                type="radio"
+                id="javascript"
+                name="quiz_category"
+                value="javascript"
+                required
+              />
+              Javascript</label
+            >
           </div>
           <div>
-            <p>Set Difficulty Level</p>
-            <input type="radio" id="easy" name="level" value="easy" />
-            <label for="easy">Easy</label>
+            <p class="form-que required">Set Difficulty Level</p>
+            <label for="easy"
+              ><input
+                type="radio"
+                id="easy"
+                name="level"
+                value="easy"
+                required
+              />
+              Easy</label
+            >
 
-            <input type="radio" id="medium" name="level" value="medium" />
-            <label for="medium">Medium</label>
+            <label for="medium"
+              ><input
+                type="radio"
+                id="medium"
+                name="level"
+                value="medium"
+                required
+              />
+              Medium</label
+            >
 
-            <input type="radio" id="hard" name="level" value="hard" />
-            <label for="hard">Hard</label>
+            <label for="hard"
+              ><input
+                type="radio"
+                id="hard"
+                name="level"
+                value="hard"
+                required
+              />
+              Hard</label
+            >
           </div>
           <div>
-            <p>Number of questions</p>
+            <p class="form-que required">Number of questions</p>
             <input
               type="number"
               placeholder="15"
               name="noOfQues"
               id="noOfQues"
+              required
             />
           </div>
-          <!-- <div>
-          <p>Time limit</p>
-          <input type="text" placeholder="MM:SS" name="timeLimit" />
-        </div> -->
           <div>
             <button type="submit" id="submitBtn">Submit</button>
           </div>
