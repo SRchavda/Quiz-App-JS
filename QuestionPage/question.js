@@ -33,7 +33,20 @@ async function fetchdata() {
 
 // get & set data for questions
 const questions = await fetchdata();
-const questionArr = questions.slice(0, noOfQues);
+
+// find random questions
+function getRandomQuestions() {
+  let randomIds = [];
+  for (let i = 0; i < noOfQues; i++) {
+    const a = Math.floor(Math.random() * questions.length + 1);
+    !randomIds.includes(a) && randomIds.push(a);
+  }
+
+  return questions.filter((x) => randomIds.includes(x.id));
+}
+
+// const questionArr = questions.slice(0, noOfQues);
+const questionArr = getRandomQuestions();
 let curQuestion = { index: 0, ques: questionArr[0] };
 let answerdQue = [];
 
@@ -203,7 +216,7 @@ function onNextClick() {
   }
 }
 
-// document.addEventListener("questionTimeUp", function () {
-//   onNextClick();
-//   skiped++;
-// });
+document.addEventListener("questionTimeUp", function () {
+  onNextClick();
+  skiped++;
+});

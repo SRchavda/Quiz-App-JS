@@ -13,7 +13,7 @@ function initTimer() {
 
 function startTimer(element) {
   intervalId = setInterval(function () {
-    if (seconds == 10) {
+    if (seconds == 60) {
       const event = new Event("questionTimeUp");
       document.dispatchEvent(event);
     }
