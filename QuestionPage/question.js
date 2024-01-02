@@ -59,6 +59,9 @@ function questionHeaderHtml() {
           <p class="correct-ques"></p>
           <p class="incorrect-ques"></p>
         </div>
+        <div class="que-conter">
+        <p>Question <span class="cur_que_num"></span> / ${noOfQues}</p>
+        </div>
     `;
 
   return htmlStr;
@@ -66,9 +69,14 @@ function questionHeaderHtml() {
 
 function questionBodyHtml(question) {
   const htmlStr = `
-      <div class="ques-text">
-        ${question?.questionText}
-      </div>
+      <div class="ques-text"></div>
+      ${
+        question?.codeAvailable
+          ? `<div class="question-code">
+        <pre>${question?.codeContent}</pre>
+      </div>`
+          : null
+      }
       <div class="option-wrapper">
         ${optionHtml(question?.options)}
       </div>
@@ -87,13 +95,15 @@ function optionHtml(optArr) {
     return `
       <button type="button" class="option" value="${option.text}">
         <p class="opt-number">${optNo + 1}</p>
-        <div class="opt-text">${option.text}</div>
+        <div class="opt-text opt-${optNo}"></div>
       </button>
     `;
   }
 
   return resultStr;
 }
+
+function setUpOptionHtml(option) {}
 
 // init question header
 document.querySelector("#question-header").innerHTML = questionHeaderHtml();
@@ -103,6 +113,7 @@ function setUpQuestionHeader() {
 
   document.querySelector("#correctCount").innerHTML = correctAns;
   document.querySelector("#inCorrectCount").innerHTML = IncorrectAns;
+  document.querySelector(".cur_que_num").innerHTML = curQuestion.index + 1;
 }
 setUpQuestionHeader();
 
@@ -111,6 +122,14 @@ function setUpQuestionBody() {
   document.querySelector("#question-body").innerHTML = questionBodyHtml(
     curQuestion.ques
   );
+
+  document.querySelector(".ques-text").textContent =
+    curQuestion?.ques?.questionText;
+
+  curQuestion?.ques?.options?.map((x, i) => {
+    document.querySelector(`.opt-${i}`).textContent = x.text;
+  });
+
   Array.from(document.getElementsByClassName("option")).forEach((element) => {
     element.addEventListener("click", (e) => optionClick(e));
   });
@@ -184,7 +203,7 @@ function onNextClick() {
   }
 }
 
-document.addEventListener("questionTimeUp", function () {
-  onNextClick();
-  skiped++;
-});
+// document.addEventListener("questionTimeUp", function () {
+//   onNextClick();
+//   skiped++;
+// });

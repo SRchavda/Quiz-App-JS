@@ -18,7 +18,7 @@ const isWin = (correct / totalQue) * 100 >= passingThresold;
 
 // Average time per question
 const takenTime = answeredQue.reduce((acc, curValue) => acc + curValue.time, 0);
-const avgTime = takenTime / totalQue;
+const avgTime = (takenTime / totalQue).toFixed(2);
 
 // set up quiz analytics
 const title = document.querySelector("#summary-title");
@@ -31,30 +31,33 @@ document.querySelector("#skiped-sum").innerHTML = `Skiped - ${skiped}`;
 document.querySelector(
   "#summary-streak"
 ).innerHTML = `streak of correct answer ${streak}`;
-document.querySelector("#taken-time").innerHTML = takenTime;
-document.querySelector("#avg-time").innerHTML = avgTime;
+document.querySelector("#taken-time").innerHTML =
+  "Total time - " + takenTime + " seconds";
+document.querySelector("#avg-time").innerHTML =
+  "Average time per question - " + avgTime + " seconds";
 
 // Set Questions and options
 
-function questionForSummaryHtml(que, optionFun) {
+function questionForSummaryHtml(que, optionFun, queIndex) {
   return `
     <div class="summary-que">
-        <p class="summary-que-title">${que?.questionText}</p>
-        <div class="summary-option-wrapper">${optionFun()}</div>
+        <p class="summary-que-title que-${queIndex}"></p>
+        <div class="summary-option-wrapper">${optionFun(queIndex)}</div>
     </div>`;
 }
 
-function summaryQueOption(option) {
+function summaryQueOption(option, optIndex, queIndex) {
   return `
         <div class="summary-option">
-            <p class="correct-ans">${option?.text}</p>
+            <p class="correct-ans opt-${queIndex}${optIndex}"></p>
         </div>
     `;
 }
 
-function setUpOptions(optionArr) {
+function setUpOptions(optionArr, queIndex) {
   return optionArr?.reduce(
-    (acc, curOpt, curIndex) => acc + summaryQueOption(curOpt),
+    (acc, curOpt, curIndex) =>
+      acc + summaryQueOption(curOpt, curIndex, queIndex),
     ""
   );
 }
@@ -65,8 +68,8 @@ function setUpQuestionForSummary() {
       acc +
       questionForSummaryHtml(
         curValue,
-        () => setUpOptions(curValue?.options),
-        ""
+        (queIndex) => setUpOptions(curValue?.options, queIndex),
+        curIndex
       ),
     ""
   );
@@ -74,3 +77,10 @@ function setUpQuestionForSummary() {
 
 document.querySelector("#summary-que-wrapper").innerHTML =
   setUpQuestionForSummary();
+
+answeredQue.map((x, i) => {
+  document.querySelector(`.que-${i}`).textContent = x?.questionText;
+  x?.options.map((y, j) => {
+    document.querySelector(`.opt-${i}${j}`).textContent = y?.text;
+  });
+});
