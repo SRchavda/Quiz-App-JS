@@ -53,9 +53,6 @@ let answerdQue = [];
 // Setting up the question's html
 function questionHeaderHtml() {
   const htmlStr = `
-        <div id="progress-wrapper">
-          <!-- <progress id="quesProgress" value="0" max="15"></progress> -->
-        </div>
         <div id="correct-wrapper">
           <p class="correct">Correct : <span id="correctCount">0</span></p>
         </div>
@@ -72,9 +69,6 @@ function questionHeaderHtml() {
           <p class="correct-ques"></p>
           <p class="incorrect-ques"></p>
         </div>
-        <div class="que-conter">
-        <p>Question <span class="cur_que_num"></span> / ${noOfQues}</p>
-        </div>
     `;
 
   return htmlStr;
@@ -82,17 +76,27 @@ function questionHeaderHtml() {
 
 function questionBodyHtml(question) {
   const htmlStr = `
+    <div class="que-content">
+      <div class="que-conter">
+        <p>Question <span class="cur_que_num"></span>/${noOfQues}</p>
+      </div>
       <div class="ques-text"></div>
       ${
         question?.codeAvailable
           ? `<div class="question-code">
         <pre>${question?.codeContent}</pre>
       </div>`
-          : null
+          : `<div></div>`
       }
       <div class="option-wrapper">
         ${optionHtml(question?.options)}
       </div>
+    </div>
+    <div class="que-timer">
+      <div>timer progress circle</div>
+      <p>58</p>
+      <p>seconds</p>
+    </div>
   `;
 
   return htmlStr;
@@ -107,7 +111,7 @@ function optionHtml(optArr) {
   function getOptStr(option, optNo) {
     return `
       <button type="button" class="option" value="${option.text}">
-        <p class="opt-number">${optNo + 1}</p>
+        <!-- <p class="opt-number">${optNo + 1}</p> -->
         <div class="opt-text opt-${optNo}"></div>
       </button>
     `;
@@ -115,8 +119,6 @@ function optionHtml(optArr) {
 
   return resultStr;
 }
-
-function setUpOptionHtml(option) {}
 
 // init question header
 document.querySelector("#question-header").innerHTML = questionHeaderHtml();
@@ -126,7 +128,6 @@ function setUpQuestionHeader() {
 
   document.querySelector("#correctCount").innerHTML = correctAns;
   document.querySelector("#inCorrectCount").innerHTML = IncorrectAns;
-  document.querySelector(".cur_que_num").innerHTML = curQuestion.index + 1;
 }
 setUpQuestionHeader();
 
@@ -135,6 +136,8 @@ function setUpQuestionBody() {
   document.querySelector("#question-body").innerHTML = questionBodyHtml(
     curQuestion.ques
   );
+
+  document.querySelector(".cur_que_num").innerHTML = curQuestion.index + 1;
 
   document.querySelector(".ques-text").textContent =
     curQuestion?.ques?.questionText;
@@ -168,12 +171,17 @@ function optionClick(event) {
   };
   answerdQue.push(newQuestion);
 
+  var x = document.querySelector("#ques-feedback");
+  x.classList.add("show");
+
   let isCorrect = curQuestion?.ques?.options[optionIndex]?.isCorrect;
 
   if (isCorrect) {
     correctAns++;
     streak++;
     document.querySelector("#correctCount").innerHTML = correctAns;
+    x.classList.add("correct");
+    x.textContent = "Correct !";
     //alert("Congratulations!");
   } else {
     IncorrectAns++;
@@ -181,7 +189,13 @@ function optionClick(event) {
     oldStreak > streak ? null : localStorage.setItem("streak", streak);
     streak = 0;
     document.querySelector("#inCorrectCount").innerHTML = IncorrectAns;
+    x.classList.add("wrong");
+    x.textContent = "Incorrect !";
   }
+
+  setTimeout(function () {
+    x.classList.remove("show");
+  }, 3000);
 }
 
 // set next btn and add event listner to it

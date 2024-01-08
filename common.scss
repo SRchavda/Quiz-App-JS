@@ -54,36 +54,21 @@ button {
   }
 }
 
-.d-flex {
+@mixin flex-center {
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.justify-content-start {
+@mixin flex-start {
+  display: flex;
   justify-content: start;
+  align-items: center;
 }
-.justify-content-end {
+
+@mixin flex-end {
+  display: flex;
   justify-content: end;
-}
-.justify-content-center {
-  justify-content: center;
-}
-
-.align-items-start {
-  align-items: start;
-}
-.align-items-center {
-  align-items: center;
-}
-.align-items-end {
-  align-items: end;
-}
-
-.flex-center {
-  justify-content: center;
-  align-items: center;
-}
-.flex-start {
-  justify-content: start;
   align-items: center;
 }
 
