@@ -1,10 +1,15 @@
 "use strict";
 
-import { getTime, setUpQuestionTimer } from "../Questions/timer";
+import {
+  getTime,
+  setUpQuestionTimer,
+  startTotalTimer,
+} from "../Questions/timer";
+import { convertToMinutes } from "../helper";
 import "../style.scss";
 
 const nextBtnStr = `
-  <button type="button" class="next-btn">Next -></button>
+  <button type="button" class="next-btn">Next <span><i class="fa-solid fa-arrow-right"></i></span></button>
 `;
 
 const formData = new URLSearchParams(location.search);
@@ -53,21 +58,10 @@ let answerdQue = [];
 // Setting up the question's html
 function questionHeaderHtml() {
   const htmlStr = `
-        <div id="correct-wrapper">
-          <p class="correct">Correct : <span id="correctCount">0</span></p>
-        </div>
-        <div id="Incorrect-wrapper">
-          <p class="Incorrect">Incorrect : <span id="inCorrectCount">0</span></p>
-        </div>
-        <div class="ques-timer-wrapper">
-          <p id="quesTimer"></p>
-        </div>
         <div class="total-timer-wrapper">
-          <p id="totalTimer"></p>
-        </div>
-        <div class="result-count-wrapper">
-          <p class="correct-ques"></p>
-          <p class="incorrect-ques"></p>
+          <p id="totalTimer">
+            <span id="current-time"><span> / ${convertToMinutes(totalTime)}
+          </p>
         </div>
     `;
 
@@ -94,7 +88,7 @@ function questionBodyHtml(question) {
     </div>
     <div class="que-timer">
       <div>timer progress circle</div>
-      <p>58</p>
+      <p id="ques-seconds">58</p>
       <p>seconds</p>
     </div>
   `;
@@ -121,13 +115,9 @@ function optionHtml(optArr) {
 }
 
 // init question header
-document.querySelector("#question-header").innerHTML = questionHeaderHtml();
 function setUpQuestionHeader() {
-  const timerDiv = document.querySelector("#progress-wrapper");
-  let secondss = setUpQuestionTimer(timerDiv);
-
-  document.querySelector("#correctCount").innerHTML = correctAns;
-  document.querySelector("#inCorrectCount").innerHTML = IncorrectAns;
+  document.querySelector("#question-header").innerHTML = questionHeaderHtml();
+  startTotalTimer(document.querySelector("#current-time"));
 }
 setUpQuestionHeader();
 
@@ -136,6 +126,11 @@ function setUpQuestionBody() {
   document.querySelector("#question-body").innerHTML = questionBodyHtml(
     curQuestion.ques
   );
+
+  const timerDiv = document.querySelector("#ques-seconds");
+  console.log(timerDiv);
+  let secondss = setUpQuestionTimer(timerDiv, 60);
+  console.log(secondss);
 
   document.querySelector(".cur_que_num").innerHTML = curQuestion.index + 1;
 
@@ -167,7 +162,7 @@ function optionClick(event) {
   const newQuestion = {
     ...curQuestion?.ques,
     options: newOption,
-    time: getTime(),
+    time: getTime().seconds,
   };
   answerdQue.push(newQuestion);
 
@@ -182,7 +177,6 @@ function optionClick(event) {
     document.querySelector("#correctCount").innerHTML = correctAns;
     x.classList.add("correct");
     x.textContent = "Correct !";
-    //alert("Congratulations!");
   } else {
     IncorrectAns++;
     const oldStreak = localStorage.getItem("streak");
@@ -197,6 +191,21 @@ function optionClick(event) {
     x.classList.remove("show");
   }, 3000);
 }
+
+function setUpQuestionFooter() {
+  document.querySelector("#ques-sum").innerHTML = `
+  <div id="correct-wrapper">
+    <p class="correct"><i class="fa-solid fa-circle-check"></i><span id="correctCount">0</span></p>
+  </div>
+  <div id="incorrect-wrapper">
+    <p class="Incorrect"><i class="fa-solid fa-circle-xmark"></i><span id="inCorrectCount">0</span></p>
+  </div>
+  `;
+
+  document.querySelector("#correctCount").innerHTML = correctAns;
+  document.querySelector("#inCorrectCount").innerHTML = IncorrectAns;
+}
+setUpQuestionFooter();
 
 // set next btn and add event listner to it
 document.querySelector("#next-btn-wrapper").innerHTML = nextBtnStr;

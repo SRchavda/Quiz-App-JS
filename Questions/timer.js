@@ -1,5 +1,8 @@
 "use strict";
 
+import { convertToMinutes } from "../helper";
+
+let totalSeconds = 1;
 let seconds = 1;
 let intervalId;
 
@@ -11,24 +14,31 @@ function initTimer() {
   }
 }
 
-function startTimer(element) {
+function startTimer(element, timePerQuestion) {
   intervalId = setInterval(function () {
-    if (seconds == 60) {
+    if (seconds == timePerQuestion) {
       const event = new Event("questionTimeUp");
       document.dispatchEvent(event);
     }
 
-    element.innerHTML = `${seconds} seconds`;
+    element.innerHTML = timePerQuestion - seconds;
     seconds++;
   }, 1000);
 }
 
-export function setUpQuestionTimer(element) {
+export function setUpQuestionTimer(element, timePerQuestion) {
   initTimer();
-  startTimer(element);
+  startTimer(element, timePerQuestion);
   return seconds;
 }
 
 export function getTime() {
-  return seconds;
+  return { seconds: seconds, totalSeconds: totalSeconds };
+}
+
+export function startTotalTimer(element) {
+  setInterval(function () {
+    element.innerHTML = convertToMinutes(totalSeconds);
+    totalSeconds++;
+  }, 1000);
 }
