@@ -36,9 +36,14 @@ export function getTime() {
   return { seconds: seconds, totalSeconds: totalSeconds };
 }
 
-export function startTotalTimer(element) {
+export function startTotalTimer(element, totalTime) {
+  console.log("total");
   setInterval(function () {
-    element.innerHTML = convertToMinutes(totalSeconds);
+    if (totalSeconds == totalTime) {
+      const event = new Event("quizTimeUp");
+      document.dispatchEvent(event);
+    }
+    element.innerHTML = convertToMinutes(totalTime - totalSeconds);
     totalSeconds++;
   }, 1000);
 }

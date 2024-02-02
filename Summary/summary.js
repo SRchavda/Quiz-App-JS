@@ -1,5 +1,7 @@
 "use strict";
 
+import "./summary.scss";
+
 const passingThresold = 35; //%
 
 // Set the Quiz Summary
@@ -17,7 +19,9 @@ const isWin = (correct / totalQue) * 100 >= passingThresold;
 // Correct ans streak
 
 // Average time per question
-const takenTime = answeredQue.reduce((acc, curValue) => acc + curValue.time, 0);
+const takenTime = answeredQue
+  .reduce((acc, curValue) => acc + curValue.time, 0)
+  .toFixed(2);
 const avgTime = (takenTime / totalQue).toFixed(2);
 
 // set up quiz analytics
@@ -28,28 +32,35 @@ title.classList.add(isWin ? "sum-win" : "sum-lose");
 document.querySelector("#correct-sum").innerHTML = `Correct - ${correct}`;
 document.querySelector("#incorrect-sum").innerHTML = `Incorrect - ${incorrect}`;
 document.querySelector("#skiped-sum").innerHTML = `Skiped - ${skiped}`;
-document.querySelector(
-  "#summary-streak"
-).innerHTML = `streak of correct answer ${streak}`;
+document.querySelector("#summary-streak").innerHTML = `Streak - ${streak}`;
 document.querySelector("#taken-time").innerHTML =
-  "Total time - " + takenTime + " seconds";
+  "Time taken - " + takenTime + " seconds";
 document.querySelector("#avg-time").innerHTML =
-  "Average time per question - " + avgTime + " seconds";
+  "Average time - " + avgTime + " seconds";
 
 // Set Questions and options
 
 function questionForSummaryHtml(que, optionFun, queIndex) {
   return `
     <div class="summary-que">
-        <p class="summary-que-title que-${queIndex}"></p>
+        <div class="que-wrapper">
+          <p class="summary-que-title que-${queIndex}"></p>
+        </div>
         <div class="summary-option-wrapper">${optionFun(queIndex)}</div>
     </div>`;
 }
 
 function summaryQueOption(option, optIndex, queIndex) {
+  console.log(option);
   return `
         <div class="summary-option">
-            <p class="correct-ans opt-${queIndex}${optIndex}"></p>
+          <p class="opt-${queIndex}${optIndex}"></p>
+          <div>
+            ${
+              option.isCorrect ? `<i class="fa-solid fa-circle-check"></i>` : ""
+            }
+            ${option.isAns ? `<i class="fa-solid fa-circle-dot"></i>` : ""}
+          </div>
         </div>
     `;
 }

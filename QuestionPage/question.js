@@ -5,7 +5,6 @@ import {
   setUpQuestionTimer,
   startTotalTimer,
 } from "../Questions/timer";
-import { convertToMinutes } from "../helper";
 import "../style.scss";
 
 const nextBtnStr = `
@@ -60,7 +59,7 @@ function questionHeaderHtml() {
   const htmlStr = `
         <div class="total-timer-wrapper">
           <p id="totalTimer">
-            <span id="current-time"><span> / ${convertToMinutes(totalTime)}
+            Time left <br> <span id="current-time">00 : 00</span>
           </p>
         </div>
     `;
@@ -117,7 +116,7 @@ function optionHtml(optArr) {
 // init question header
 function setUpQuestionHeader() {
   document.querySelector("#question-header").innerHTML = questionHeaderHtml();
-  startTotalTimer(document.querySelector("#current-time"));
+  startTotalTimer(document.querySelector("#current-time"), totalTime);
 }
 setUpQuestionHeader();
 
@@ -147,6 +146,21 @@ function setUpQuestionBody() {
 }
 setUpQuestionBody();
 
+function setUpQuestionFooter() {
+  document.querySelector("#ques-sum").innerHTML = `
+  <div id="correct-wrapper" class="toast-wrapper">
+    <p class="correct"><i class="fa-solid fa-circle-check"></i><span id="correctCount">0</span></p>
+  </div>
+  <div id="incorrect-wrapper" class="toast-wrapper">
+    <p class="incorrect"><i class="fa-solid fa-circle-xmark"></i><span id="inCorrectCount">0</span></p>
+  </div>
+  `;
+
+  document.querySelector("#correctCount").innerHTML = correctAns;
+  document.querySelector("#inCorrectCount").innerHTML = IncorrectAns;
+}
+setUpQuestionFooter();
+
 // option click event
 function optionClick(event) {
   let optionIndex = curQuestion?.ques?.options?.findIndex(
@@ -167,6 +181,7 @@ function optionClick(event) {
   answerdQue.push(newQuestion);
 
   var x = document.querySelector("#ques-feedback");
+  x.className = "";
   x.classList.add("show");
 
   let isCorrect = curQuestion?.ques?.options[optionIndex]?.isCorrect;
@@ -192,21 +207,6 @@ function optionClick(event) {
   }, 3000);
 }
 
-function setUpQuestionFooter() {
-  document.querySelector("#ques-sum").innerHTML = `
-  <div id="correct-wrapper">
-    <p class="correct"><i class="fa-solid fa-circle-check"></i><span id="correctCount">0</span></p>
-  </div>
-  <div id="incorrect-wrapper">
-    <p class="Incorrect"><i class="fa-solid fa-circle-xmark"></i><span id="inCorrectCount">0</span></p>
-  </div>
-  `;
-
-  document.querySelector("#correctCount").innerHTML = correctAns;
-  document.querySelector("#inCorrectCount").innerHTML = IncorrectAns;
-}
-setUpQuestionFooter();
-
 // set next btn and add event listner to it
 document.querySelector("#next-btn-wrapper").innerHTML = nextBtnStr;
 document
@@ -222,7 +222,6 @@ function onNextClick() {
       ques: questionArr[curQuestion.index + 1],
     };
     setUpQuestionBody();
-    setUpQuestionHeader();
   } else {
     const queSum = {
       correct: correctAns,
@@ -242,4 +241,19 @@ function onNextClick() {
 document.addEventListener("questionTimeUp", function () {
   onNextClick();
   skiped++;
+});
+
+document.addEventListener("quizTimeUp", function () {
+  const queSum = {
+    correct: correctAns,
+    incorrect: IncorrectAns,
+    skiped: skiped,
+  };
+
+  const oldStreak = localStorage.getItem("streak");
+  localStorage.setItem("streak", streak > oldStreak ? streak : oldStreak);
+  localStorage.setItem("ansQue", JSON.stringify(answerdQue));
+  localStorage.setItem("queSum", JSON.stringify(queSum));
+
+  location.href = "../Summary/summary.html";
 });

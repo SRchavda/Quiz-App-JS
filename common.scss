@@ -49,7 +49,7 @@ button {
 .required {
   &::after {
     content: "*";
-    color: $text-danger;
+    color: $danger;
     margin-left: 2px;
   }
 }
