@@ -1,0 +1,1455 @@
+[
+  {
+    "id": 1,
+    "category": "CSS",
+    "type": "multiple choice",
+    "tags": ["CSS"],
+    "questionText": "The full form of CSS is:",
+    "options": [
+      {
+        "text": "Cascading Style Sheets",
+        "isCorrect": true
+      },
+      {
+        "text": "Coloured Special Sheets",
+        "isCorrect": false
+      },
+      {
+        "text": "Color and Style Sheets",
+        "isCorrect": false
+      },
+      {
+        "text": "None of the above",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswers": ["Cascading Style Sheets"],
+    "explanation": "Cascading Style Sheets",
+    "codeAvailable": false,
+    "codeContent": null
+  },
+  {
+    "id": 2,
+    "category": "CSS",
+    "type": "multiple choice",
+    "tags": ["CSS"],
+    "questionText": "How can we change the background color of an element?",
+    "options": [
+      {
+        "text": "background-color",
+        "isCorrect": true
+      },
+      {
+        "text": "color",
+        "isCorrect": false
+      },
+      {
+        "text": "Both A and B",
+        "isCorrect": false
+      },
+      {
+        "text": "None of the above",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswers": ["background-color"],
+    "explanation": "background-color",
+    "codeAvailable": false,
+    "codeContent": null
+  },
+  {
+    "id": 3,
+    "category": "CSS",
+    "type": "multiple choice",
+    "tags": ["CSS"],
+    "questionText": "How can we change the text color of an element?",
+    "options": [
+      {
+        "text": "background-color",
+        "isCorrect": false
+      },
+      {
+        "text": "color",
+        "isCorrect": true
+      },
+      {
+        "text": "Both A and B",
+        "isCorrect": false
+      },
+      {
+        "text": "None of the above",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswers": ["color"],
+    "explanation": "color",
+    "codeAvailable": false,
+    "codeContent": null
+  },
+  {
+    "id": 4,
+    "category": "CSS",
+    "type": "multiple choice",
+    "tags": ["CSS"],
+    "questionText": "In how many ways can CSS be written in?",
+    "options": [
+      {
+        "text": "1",
+        "isCorrect": false
+      },
+      {
+        "text": "2",
+        "isCorrect": false
+      },
+      {
+        "text": "3",
+        "isCorrect": true
+      },
+      {
+        "text": "4",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswers": ["3"],
+    "explanation": "3",
+    "codeAvailable": false,
+    "codeContent": null
+  },
+  {
+    "id": 5,
+    "category": "CSS",
+    "type": "multiple choice",
+    "tags": ["CSS"],
+    "questionText": "What type of CSS is the following code snippet?",
+    "options": [
+      {
+        "text": "Inline",
+        "isCorrect": true
+      },
+      {
+        "text": "Internal",
+        "isCorrect": false
+      },
+      {
+        "text": "External",
+        "isCorrect": false
+      },
+      {
+        "text": "None of the above",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswers": ["Inline"],
+    "explanation": "Inline",
+    "codeAvailable": true,
+    "codeContent": "<h1 style=\"color:blue;\">A Blue Heading</h1>"
+  },
+  {
+    "id": 6,
+    "category": "CSS",
+    "type": "multiple choice",
+    "tags": ["CSS"],
+    "questionText": "What type of CSS is generally recommended for designing large web pages?",
+    "options": [
+      {
+        "text": "Inline",
+        "isCorrect": false
+      },
+      {
+        "text": "Internal",
+        "isCorrect": false
+      },
+      {
+        "text": "External",
+        "isCorrect": true
+      },
+      {
+        "text": "None of the above",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswers": ["External"],
+    "explanation": "External",
+    "codeAvailable": false,
+    "codeContent": null,
+    "level": "hard"
+  },
+  {
+    "id": 7,
+    "category": "CSS",
+    "type": "multiple choice",
+    "tags": ["CSS"],
+    "questionText": "Which HTML tag is used to declare internal CSS?",
+    "options": [
+      {
+        "text": "<style>",
+        "isCorrect": true
+      },
+      {
+        "text": "<link>",
+        "isCorrect": false
+      },
+      {
+        "text": "<script>",
+        "isCorrect": false
+      },
+      {
+        "text": "None of the above",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswers": ["<style>"],
+    "explanation": "<style>",
+    "codeAvailable": false,
+    "codeContent": null
+  },
+  {
+    "id": 8,
+    "category": "CSS",
+    "type": "multiple choice",
+    "tags": ["CSS"],
+    "questionText": "How can we select an element with a specific ID in CSS?",
+    "options": [
+      {
+        "text": "#",
+        "isCorrect": true
+      },
+      {
+        "text": ".",
+        "isCorrect": false
+      },
+      {
+        "text": "^",
+        "isCorrect": false
+      },
+      {
+        "text": "None of the above",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswers": ["#"],
+    "explanation": "#",
+    "codeAvailable": false,
+    "codeContent": null
+  },
+  {
+    "id": 9,
+    "category": "CSS",
+    "type": "multiple choice",
+    "tags": ["CSS"],
+    "questionText": "How can we select an element with a specific Class in CSS?",
+    "options": [
+      {
+        "text": "#",
+        "isCorrect": false
+      },
+      {
+        "text": ".",
+        "isCorrect": true
+      },
+      {
+        "text": "^",
+        "isCorrect": false
+      },
+      {
+        "text": "None of the above",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswers": ["."],
+    "explanation": ".",
+    "codeAvailable": false,
+    "codeContent": null
+  },
+  {
+    "id": 10,
+    "category": "CSS",
+    "type": "multiple choice",
+    "tags": ["CSS"],
+    "questionText": "How can we write comments in CSS?",
+    "options": [
+      {
+        "text": "/* */",
+        "isCorrect": true
+      },
+      {
+        "text": "//",
+        "isCorrect": false
+      },
+      {
+        "text": "#",
+        "isCorrect": false
+      },
+      {
+        "text": "All of the above",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswers": ["/* */"],
+    "explanation": "/* */",
+    "codeAvailable": false,
+    "codeContent": null
+  },
+  {
+    "id": 11,
+    "category": "CSS",
+    "type": "multiple choice",
+    "tags": ["CSS"],
+    "questionText": "In the below code snippet, in what order will the margins be added?",
+    "options": [
+      {
+        "text": "Top, Right, Bottom, Left",
+        "isCorrect": true
+      },
+      {
+        "text": "Top, Left, Bottom, Right",
+        "isCorrect": false
+      },
+      {
+        "text": "Top, Bottom, Right, Left",
+        "isCorrect": false
+      },
+      {
+        "text": "Right, Left, Top, Bottom",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswers": ["Top, Right, Bottom, Left"],
+    "explanation": "Top, Right, Bottom, Left",
+    "codeAvailable": true,
+    "codeContent": "p {\n    margin: 25px 50px 75px 100px;\n  }"
+  },
+  {
+    "id": 12,
+    "category": "CSS",
+    "type": "multiple choice",
+    "tags": ["CSS"],
+    "questionText": "Can negative values be allowed in padding property?",
+    "options": [
+      {
+        "text": "Yes",
+        "isCorrect": false
+      },
+      {
+        "text": "No",
+        "isCorrect": true
+      },
+      {
+        "text": "Depends on property",
+        "isCorrect": false
+      },
+      {
+        "text": "None of the above",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswers": ["No"],
+    "explanation": "No",
+    "codeAvailable": false,
+    "codeContent": null
+  },
+  {
+    "id": 13,
+    "category": "CSS",
+    "type": "multiple choice",
+    "tags": ["CSS"],
+    "questionText": "The CSS property used to specify the transparency of an element is?",
+    "options": [
+      {
+        "text": "opacity",
+        "isCorrect": true
+      },
+      {
+        "text": "visibility",
+        "isCorrect": false
+      },
+      {
+        "text": "filter",
+        "isCorrect": false
+      },
+      {
+        "text": "None of the above",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswers": ["opacity"],
+    "explanation": "opacity",
+    "codeAvailable": false,
+    "codeContent": null
+  },
+  {
+    "id": 14,
+    "category": "CSS",
+    "type": "multiple choice",
+    "tags": ["CSS"],
+    "questionText": "How can we specify the spacing between each letter in a text in CSS?",
+    "options": [
+      {
+        "text": "alpha-spacing",
+        "isCorrect": false
+      },
+      {
+        "text": "letter-spacing",
+        "isCorrect": true
+      },
+      {
+        "text": "character-spacing",
+        "isCorrect": false
+      },
+      {
+        "text": "None of the above",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswers": ["letter-spacing"],
+    "explanation": "letter-spacing",
+    "codeAvailable": false,
+    "codeContent": null
+  },
+  {
+    "id": 15,
+    "category": "CSS",
+    "type": "multiple choice",
+    "tags": ["CSS"],
+    "questionText": "What is the correct syntax for referring an external CSS?",
+    "options": [
+      {
+        "text": "<link rel=\"stylesheet\" type=\"text/css\" href=\"style.css\">",
+        "isCorrect": true
+      },
+      {
+        "text": "<style rel=\"stylesheet\" type=\"text/css\" href=\"style.css\">",
+        "isCorrect": false
+      },
+      {
+        "text": "Both A and B",
+        "isCorrect": false
+      },
+      {
+        "text": "None of the above",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswers": [
+      "<link rel=\"stylesheet\" type=\"text/css\" href=\"style.css\">"
+    ],
+    "explanation": "<link rel=\"stylesheet\" type=\"text/css\" href=\"style.css\">",
+    "codeAvailable": false,
+    "codeContent": null
+  },
+  {
+    "id": 16,
+    "category": "CSS",
+    "type": "multiple choice",
+    "tags": ["CSS"],
+    "questionText": "Which of the following are valid ways to represent a colour in CSS?",
+    "options": [
+      {
+        "text": "A valid color name",
+        "isCorrect": false
+      },
+      {
+        "text": "RGB values",
+        "isCorrect": false
+      },
+      {
+        "text": "HEX values",
+        "isCorrect": false
+      },
+      {
+        "text": "All of the above",
+        "isCorrect": true
+      }
+    ],
+    "correctAnswers": ["All of the above"],
+    "explanation": "All of the above",
+    "codeAvailable": false,
+    "codeContent": null
+  },
+  {
+    "id": 17,
+    "category": "CSS",
+    "type": "multiple choice",
+    "tags": ["CSS"],
+    "questionText": "Which of the following is the correct way to select all h1 headers in a div element?",
+    "options": [
+      {
+        "text": "div h1",
+        "isCorrect": true
+      },
+      {
+        "text": "div-h1",
+        "isCorrect": false
+      },
+      {
+        "text": "h1",
+        "isCorrect": false
+      },
+      {
+        "text": "None of the above",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswers": ["div h1"],
+    "explanation": "div h1",
+    "codeAvailable": false,
+    "codeContent": null
+  },
+  {
+    "id": 18,
+    "category": "CSS",
+    "type": "multiple choice",
+    "tags": ["CSS"],
+    "questionText": "We can make rounded borders around elements using which CSS element?",
+    "options": [
+      {
+        "text": "border-collapse",
+        "isCorrect": false
+      },
+      {
+        "text": "border-round",
+        "isCorrect": false
+      },
+      {
+        "text": "border-radius",
+        "isCorrect": true
+      },
+      {
+        "text": "None of the above",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswers": ["border-radius"],
+    "explanation": "border-radius",
+    "codeAvailable": false,
+    "codeContent": null
+  },
+  {
+    "id": 19,
+    "category": "CSS",
+    "type": "multiple choice",
+    "tags": ["CSS"],
+    "questionText": "How can we set the maximum width of the elements content box using CSS?",
+    "options": [
+      {
+        "text": "height property",
+        "isCorrect": false
+      },
+      {
+        "text": "max-height property",
+        "isCorrect": false
+      },
+      {
+        "text": "max-width property",
+        "isCorrect": true
+      },
+      {
+        "text": "None of the above",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswers": ["max-width property"],
+    "explanation": "max-width property",
+    "codeAvailable": false,
+    "codeContent": null
+  },
+  {
+    "id": 20,
+    "category": "CSS",
+    "type": "multiple choice",
+    "tags": ["CSS"],
+    "questionText": "Which CSS property is used to specify different border styles?",
+    "options": [
+      {
+        "text": "border-style",
+        "isCorrect": true
+      },
+      {
+        "text": "border",
+        "isCorrect": false
+      },
+      {
+        "text": "Both A and B",
+        "isCorrect": false
+      },
+      {
+        "text": "None of the above",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswers": ["border-style"],
+    "explanation": "border-style",
+    "codeAvailable": false,
+    "codeContent": null
+  },
+  {
+    "id": 21,
+    "category": "CSS",
+    "type": "multiple choice",
+    "tags": ["CSS"],
+    "questionText": "Which of the following property specifies the look and design of an outline?",
+    "options": [
+      {
+        "text": "outline-style",
+        "isCorrect": true
+      },
+      {
+        "text": "outline",
+        "isCorrect": false
+      },
+      {
+        "text": "outline-font",
+        "isCorrect": false
+      },
+      {
+        "text": "None of the above",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswers": ["outline-style"],
+    "explanation": "outline-style",
+    "codeAvailable": false,
+    "codeContent": null
+  },
+  {
+    "id": 22,
+    "category": "CSS",
+    "type": "multiple choice",
+    "tags": ["CSS"],
+    "questionText": "Which of the following are valid CSS position property values?",
+    "options": [
+      {
+        "text": "static",
+        "isCorrect": false
+      },
+      {
+        "text": "relative",
+        "isCorrect": false
+      },
+      {
+        "text": "fixed",
+        "isCorrect": false
+      },
+      {
+        "text": "All of the above",
+        "isCorrect": true
+      }
+    ],
+    "correctAnswers": ["All of the above"],
+    "explanation": "All of the above",
+    "codeAvailable": false,
+    "codeContent": null
+  },
+  {
+    "id": 23,
+    "category": "CSS",
+    "type": "multiple choice",
+    "tags": ["CSS"],
+    "questionText": "What does the inherit value for a property do?",
+    "options": [
+      {
+        "text": "Inherits the value of the parent element.",
+        "isCorrect": true
+      },
+      {
+        "text": "Invalid property name.",
+        "isCorrect": false
+      },
+      {
+        "text": "Changes the value of the parent element’s property.",
+        "isCorrect": false
+      },
+      {
+        "text": "None of the above",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswers": ["Inherits the value of the parent element."],
+    "explanation": "Inherits the value of the parent element.",
+    "codeAvailable": false,
+    "codeContent": null
+  },
+  {
+    "id": 24,
+    "category": "CSS",
+    "type": "multiple choice",
+    "tags": ["CSS"],
+    "questionText": "Setting an inline-block in CSS requires which of the following properties?",
+    "options": [
+      {
+        "text": "display",
+        "isCorrect": true
+      },
+      {
+        "text": "color",
+        "isCorrect": false
+      },
+      {
+        "text": "block",
+        "isCorrect": false
+      },
+      {
+        "text": "None of the above",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswers": ["display"],
+    "explanation": "display",
+    "codeAvailable": false,
+    "codeContent": null
+  },
+  {
+    "id": 25,
+    "category": "CSS",
+    "type": "multiple choice",
+    "tags": ["CSS"],
+    "questionText": "Which of the following CSS property is used for controlling the layout?",
+    "options": [
+      {
+        "text": "display",
+        "isCorrect": true
+      },
+      {
+        "text": "color",
+        "isCorrect": false
+      },
+      {
+        "text": "text",
+        "isCorrect": false
+      },
+      {
+        "text": "None of the above",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswers": ["display"],
+    "explanation": "display",
+    "codeAvailable": false,
+    "codeContent": null
+  },
+  {
+    "id": 26,
+    "category": "CSS",
+    "type": "multiple choice",
+    "tags": ["CSS"],
+    "questionText": "Which of the following CSS property specifies the origin of the background image?",
+    "options": [
+      {
+        "text": "background-origin",
+        "isCorrect": true
+      },
+      {
+        "text": "background-size",
+        "isCorrect": false
+      },
+      {
+        "text": "origin",
+        "isCorrect": false
+      },
+      {
+        "text": "None of the above",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswers": ["background-origin"],
+    "explanation": "background-origin",
+    "codeAvailable": false,
+    "codeContent": null
+  },
+  {
+    "id": 27,
+    "category": "CSS",
+    "type": "multiple choice",
+    "tags": ["CSS"],
+    "questionText": "How are custom fonts defined using CSS?",
+    "options": [
+      {
+        "text": "@font-face rule.",
+        "isCorrect": true
+      },
+      {
+        "text": "Custom fonts cannot be defined.",
+        "isCorrect": false
+      },
+      {
+        "text": "src tags.",
+        "isCorrect": false
+      },
+      {
+        "text": "None of the above",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswers": ["@font-face rule."],
+    "explanation": "@font-face rule.",
+    "codeAvailable": false,
+    "codeContent": null
+  },
+  {
+    "id": 28,
+    "category": "CSS",
+    "type": "multiple choice",
+    "tags": ["CSS"],
+    "questionText": "Which of the following are parts of the CSS box model?",
+    "options": [
+      {
+        "text": "Margins",
+        "isCorrect": false
+      },
+      {
+        "text": "Borders",
+        "isCorrect": false
+      },
+      {
+        "text": "Padding",
+        "isCorrect": false
+      },
+      {
+        "text": "All of the above",
+        "isCorrect": true
+      }
+    ],
+    "correctAnswers": ["All of the above"],
+    "explanation": "All of the above",
+    "codeAvailable": false,
+    "codeContent": null
+  },
+  {
+    "id": 29,
+    "category": "CSS",
+    "type": "multiple choice",
+    "tags": ["CSS"],
+    "questionText": "Which of the following components of the CSS box model are transparent?",
+    "options": [
+      {
+        "text": "Padding",
+        "isCorrect": false
+      },
+      {
+        "text": "Margin",
+        "isCorrect": false
+      },
+      {
+        "text": "Both A and B",
+        "isCorrect": true
+      },
+      {
+        "text": "Content",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswers": ["Both A and B"],
+    "explanation": "Both A and B",
+    "codeAvailable": false,
+    "codeContent": null
+  },
+  {
+    "id": 30,
+    "category": "CSS",
+    "type": "multiple choice",
+    "tags": ["CSS"],
+    "questionText": "What will be the width of the div element given below?",
+    "options": [
+      {
+        "text": "310px",
+        "isCorrect": false
+      },
+      {
+        "text": "350px",
+        "isCorrect": false
+      },
+      {
+        "text": "360px",
+        "isCorrect": true
+      },
+      {
+        "text": "None of the above",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswers": ["360px"],
+    "explanation": "360px",
+    "codeAvailable": true,
+    "codeContent": "div {\n    width: 310px;\n    padding: 20px;\n    border: 5px solid blue;\n    margin: 0;\n  }"
+  },
+  {
+    "id": 31,
+    "category": "CSS",
+    "type": "multiple choice",
+    "tags": ["CSS"],
+    "questionText": "Which of the following can be achieved with CSS lists?",
+    "options": [
+      {
+        "text": "Set different list item markers for ordered lists",
+        "isCorrect": false
+      },
+      {
+        "text": "Set different list item markers for unordered lists",
+        "isCorrect": false
+      },
+      {
+        "text": "Set an image as the list item marker",
+        "isCorrect": false
+      },
+      {
+        "text": "All of the above",
+        "isCorrect": true
+      }
+    ],
+    "correctAnswers": ["All of the above"],
+    "explanation": "All of the above",
+    "codeAvailable": false,
+    "codeContent": null
+  },
+  {
+    "id": 32,
+    "category": "CSS",
+    "type": "multiple choice",
+    "tags": ["CSS"],
+    "questionText": "Which of the following CSS property specifies the type of list item marker?",
+    "options": [
+      {
+        "text": "list",
+        "isCorrect": false
+      },
+      {
+        "text": "list-style-type",
+        "isCorrect": true
+      },
+      {
+        "text": "ul",
+        "isCorrect": false
+      },
+      {
+        "text": "ol",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswers": ["list-style-type"],
+    "explanation": "list-style-type",
+    "codeAvailable": false,
+    "codeContent": null
+  },
+  {
+    "id": 33,
+    "category": "CSS",
+    "type": "multiple choice",
+    "tags": ["CSS"],
+    "questionText": "What value should be passed to the width parameter if we want an element, say a table, to span the entire width of the screen?",
+    "options": [
+      {
+        "text": "100%",
+        "isCorrect": true
+      },
+      {
+        "text": "50%",
+        "isCorrect": false
+      },
+      {
+        "text": "0%",
+        "isCorrect": false
+      },
+      {
+        "text": "None of the above",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswers": ["100%"],
+    "explanation": "100%",
+    "codeAvailable": false,
+    "codeContent": null
+  },
+  {
+    "id": 34,
+    "category": "CSS",
+    "type": "multiple choice",
+    "tags": ["CSS"],
+    "questionText": "Which of the following properties is used to align text in CSS?",
+    "options": [
+      {
+        "text": "text-align",
+        "isCorrect": true
+      },
+      {
+        "text": "text-alignment",
+        "isCorrect": false
+      },
+      {
+        "text": "text",
+        "isCorrect": false
+      },
+      {
+        "text": "text-position",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswers": ["text-align"],
+    "explanation": "text-align",
+    "codeAvailable": false,
+    "codeContent": null
+  },
+  {
+    "id": 35,
+    "category": "CSS",
+    "type": "multiple choice",
+    "tags": ["CSS"],
+    "questionText": "Which of the following is the correct approach to make a table responsive?",
+    "options": [
+      {
+        "text": "overflow-x: auto",
+        "isCorrect": true
+      },
+      {
+        "text": "overflow-x: none",
+        "isCorrect": false
+      },
+      {
+        "text": "Both A and B",
+        "isCorrect": false
+      },
+      {
+        "text": "None of the above",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswers": ["overflow-x: auto"],
+    "explanation": "overflow-x: auto",
+    "codeAvailable": false,
+    "codeContent": null
+  },
+  {
+    "id": 36,
+    "category": "CSS",
+    "type": "multiple choice",
+    "tags": ["CSS"],
+    "questionText": "Which of the following CSS properties specifies the stack order of elements?",
+    "options": [
+      {
+        "text": "z-index",
+        "isCorrect": true
+      },
+      {
+        "text": "overlap",
+        "isCorrect": false
+      },
+      {
+        "text": "No such specific property is present",
+        "isCorrect": false
+      },
+      {
+        "text": "None of the above",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswers": ["z-index"],
+    "explanation": "z-index",
+    "codeAvailable": false,
+    "codeContent": null
+  },
+  {
+    "id": 37,
+    "category": "CSS",
+    "type": "multiple choice",
+    "tags": ["CSS"],
+    "questionText": "Which of the following CSS property creates a clipping region and specifies the visible area of the element?",
+    "options": [
+      {
+        "text": "visibility",
+        "isCorrect": false
+      },
+      {
+        "text": "clip-path",
+        "isCorrect": true
+      },
+      {
+        "text": "Both A and B",
+        "isCorrect": false
+      },
+      {
+        "text": "None of the above",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswers": ["clip-path"],
+    "explanation": "clip-path",
+    "codeAvailable": false,
+    "codeContent": null
+  },
+  {
+    "id": 38,
+    "category": "CSS",
+    "type": "multiple choice",
+    "tags": ["CSS"],
+    "questionText": "What are the uses of CSS pseudo-elements?",
+    "options": [
+      {
+        "text": "Style specified parts of an element.",
+        "isCorrect": false
+      },
+      {
+        "text": "Style the first letter or line of an element.",
+        "isCorrect": false
+      },
+      {
+        "text": "Insert content before or after the element.",
+        "isCorrect": false
+      },
+      {
+        "text": "All of the above.",
+        "isCorrect": true
+      }
+    ],
+    "correctAnswers": ["All of the above."],
+    "explanation": "All of the above.",
+    "codeAvailable": false,
+    "codeContent": null
+  },
+  {
+    "id": 39,
+    "category": "CSS",
+    "type": "multiple choice",
+    "tags": ["CSS"],
+    "questionText": "How can we select elements with a specified attribute in CSS?",
+    "options": [
+      {
+        "text": "[attribute] selector",
+        "isCorrect": true
+      },
+      {
+        "text": "[property] selector",
+        "isCorrect": false
+      },
+      {
+        "text": "Both A and B",
+        "isCorrect": false
+      },
+      {
+        "text": "None of the above",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswers": ["[attribute] selector"],
+    "explanation": "[attribute] selector",
+    "codeAvailable": false,
+    "codeContent": null
+  },
+  {
+    "id": 40,
+    "category": "CSS",
+    "type": "multiple choice",
+    "tags": ["CSS"],
+    "questionText": "Which of the following are types of length units in CSS?",
+    "options": [
+      {
+        "text": "Absolute",
+        "isCorrect": false
+      },
+      {
+        "text": "Relative",
+        "isCorrect": false
+      },
+      {
+        "text": "Both A and B",
+        "isCorrect": true
+      },
+      {
+        "text": "None of the above",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswers": ["Both A and B"],
+    "explanation": "Both A and B",
+    "codeAvailable": false,
+    "codeContent": null
+  },
+  {
+    "id": 41,
+    "category": "CSS",
+    "type": "multiple choice",
+    "tags": ["CSS"],
+    "questionText": "Which of the following are units of relative length in CSS?",
+    "options": [
+      {
+        "text": "em",
+        "isCorrect": false
+      },
+      {
+        "text": "rem",
+        "isCorrect": false
+      },
+      {
+        "text": "vmax",
+        "isCorrect": false
+      },
+      {
+        "text": "All of the above",
+        "isCorrect": true
+      }
+    ],
+    "correctAnswers": ["All of the above"],
+    "explanation": "All of the above",
+    "codeAvailable": false,
+    "codeContent": null
+  },
+  {
+    "id": 42,
+    "category": "CSS",
+    "type": "multiple choice",
+    "tags": ["CSS"],
+    "questionText": "What parameter does the calc() function in CSS take?",
+    "options": [
+      {
+        "text": "A sentence",
+        "isCorrect": false
+      },
+      {
+        "text": "A mathematical expression",
+        "isCorrect": true
+      },
+      {
+        "text": "A number",
+        "isCorrect": false
+      },
+      {
+        "text": "None of the above",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswers": ["A mathematical expression"],
+    "explanation": "A mathematical expression",
+    "codeAvailable": false,
+    "codeContent": null
+  },
+  {
+    "id": 43,
+    "category": "CSS",
+    "type": "multiple choice",
+    "tags": ["CSS"],
+    "questionText": "How can we add more importance to a property/value than normal?",
+    "options": [
+      {
+        "text": "!important",
+        "isCorrect": true
+      },
+      {
+        "text": "important",
+        "isCorrect": false
+      },
+      {
+        "text": "bold",
+        "isCorrect": false
+      },
+      {
+        "text": "None of the above",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswers": ["!important"],
+    "explanation": "!important",
+    "codeAvailable": false,
+    "codeContent": null
+  },
+  {
+    "id": 44,
+    "category": "CSS",
+    "type": "multiple choice",
+    "tags": ["CSS"],
+    "questionText": "Which CSS property specifies the painting area of the background?",
+    "options": [
+      {
+        "text": "background-size",
+        "isCorrect": false
+      },
+      {
+        "text": "background-clip",
+        "isCorrect": true
+      },
+      {
+        "text": "background-image",
+        "isCorrect": false
+      },
+      {
+        "text": "None of the above",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswers": ["background-clip"],
+    "explanation": "background-clip",
+    "codeAvailable": false,
+    "codeContent": null
+  },
+  {
+    "id": 45,
+    "category": "CSS",
+    "type": "multiple choice",
+    "tags": ["CSS"],
+    "questionText": "What are the different types of gradients in CSS?",
+    "options": [
+      {
+        "text": "Linear Gradients",
+        "isCorrect": false
+      },
+      {
+        "text": "Conic Gradients",
+        "isCorrect": false
+      },
+      {
+        "text": "Radial Gradients",
+        "isCorrect": false
+      },
+      {
+        "text": "All of the above",
+        "isCorrect": true
+      }
+    ],
+    "correctAnswers": ["All of the above"],
+    "explanation": "All of the above",
+    "codeAvailable": false,
+    "codeContent": null
+  },
+  {
+    "id": 46,
+    "category": "CSS",
+    "type": "multiple choice",
+    "tags": ["CSS"],
+    "questionText": "Which CSS property is used to create an image reflection?",
+    "options": [
+      {
+        "text": "box-reflect",
+        "isCorrect": true
+      },
+      {
+        "text": "image-reflect",
+        "isCorrect": false
+      },
+      {
+        "text": "reflect-img",
+        "isCorrect": false
+      },
+      {
+        "text": "None of the above",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswers": ["box-reflect"],
+    "explanation": "box-reflect",
+    "codeAvailable": false,
+    "codeContent": null
+  },
+  {
+    "id": 47,
+    "category": "CSS",
+    "type": "multiple choice",
+    "tags": ["CSS"],
+    "questionText": "The transparent keyword is equivalent to which RGBA() value in CSS?",
+    "options": [
+      {
+        "text": "RGBA(0, 0, 0, 1)",
+        "isCorrect": false
+      },
+      {
+        "text": "RGBA(255, 255, 255, 1)",
+        "isCorrect": false
+      },
+      {
+        "text": "RGBA(0, 0, 0, 0)",
+        "isCorrect": true
+      },
+      {
+        "text": "RGBA(255, 255, 255, 0)",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswers": ["RGBA(0, 0, 0, 0)"],
+    "explanation": "RGBA(0, 0, 0, 0)",
+    "codeAvailable": false,
+    "codeContent": null
+  },
+  {
+    "id": 48,
+    "category": "CSS",
+    "type": "multiple choice",
+    "tags": ["CSS"],
+    "questionText": "What function is used to insert values of a CSS variable?",
+    "options": [
+      {
+        "text": "var()",
+        "isCorrect": true
+      },
+      {
+        "text": "rand()",
+        "isCorrect": false
+      },
+      {
+        "text": "varchar()",
+        "isCorrect": false
+      },
+      {
+        "text": "calc()",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswers": ["var()"],
+    "explanation": "var()",
+    "codeAvailable": false,
+    "codeContent": null
+  },
+  {
+    "id": 49,
+    "category": "CSS",
+    "type": "multiple choice",
+    "tags": ["CSS"],
+    "questionText": "What is the general syntax of writing the var() function?",
+    "options": [
+      {
+        "text": "var(--name, value)",
+        "isCorrect": true
+      },
+      {
+        "text": "var(--name)",
+        "isCorrect": false
+      },
+      {
+        "text": "var(value)",
+        "isCorrect": false
+      },
+      {
+        "text": "None of the above",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswers": ["var(--name, value)"],
+    "explanation": "var(--name, value)",
+    "codeAvailable": false,
+    "codeContent": null
+  },
+  {
+    "id": 50,
+    "category": "CSS",
+    "type": "multiple choice",
+    "tags": ["CSS"],
+    "questionText": "How many layout modes were there before the Flexbox Layout Module was introduced in CSS?",
+    "options": [
+      {
+        "text": "1",
+        "isCorrect": false
+      },
+      {
+        "text": "2",
+        "isCorrect": false
+      },
+      {
+        "text": "3",
+        "isCorrect": false
+      },
+      {
+        "text": "4",
+        "isCorrect": true
+      }
+    ],
+    "correctAnswers": ["4"],
+    "explanation": "4",
+    "codeAvailable": false,
+    "codeContent": null
+  }
+]

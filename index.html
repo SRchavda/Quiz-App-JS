@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/a19b7777ea.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Vite App</title>
+  </head>
+
+  <body>
+    <div id="app">
+      <div class="formWrapper">
+        <form name="quizForm" id="formm" action="./QuestionPage/question.html">
+          <div class="title">Create Quiz</div>
+          <div>
+            <p class="form-que required">Select Quiz Categories</p>
+            <label for="HTML">
+              <input
+                type="radio"
+                id="HTML"
+                name="quiz_category"
+                value="HTML"
+                required
+              />
+              HTML</label
+            >
+
+            <label for="CSS"
+              ><input
+                type="radio"
+                id="CSS"
+                name="quiz_category"
+                value="CSS"
+                required
+              />
+              CSS</label
+            >
+
+            <label for="javascript"
+              ><input
+                type="radio"
+                id="javascript"
+                name="quiz_category"
+                value="javascript"
+                required
+              />
+              Javascript</label
+            >
+          </div>
+          <div>
+            <p class="form-que required">Set Difficulty Level</p>
+            <label for="easy"
+              ><input
+                type="radio"
+                id="easy"
+                name="level"
+                value="easy"
+                required
+              />
+              Easy</label
+            >
+
+            <label for="medium"
+              ><input
+                type="radio"
+                id="medium"
+                name="level"
+                value="medium"
+                required
+              />
+              Medium</label
+            >
+
+            <label for="hard"
+              ><input
+                type="radio"
+                id="hard"
+                name="level"
+                value="hard"
+                required
+              />
+              Hard</label
+            >
+          </div>
+          <div>
+            <p class="form-que required">Number of questions</p>
+            <input
+              type="number"
+              placeholder="15"
+              name="noOfQues"
+              id="noOfQues"
+              required
+            />
+          </div>
+          <div>
+            <button type="submit" id="submitBtn">Submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>

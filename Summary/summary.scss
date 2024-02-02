@@ -1,0 +1,86 @@
+@import "../common.scss";
+@import "../constant.scss";
+
+body {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#summaryWrapper {
+    margin: 15px 0;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 60vw;
+
+    #summary-header {
+        border: 1px solid $primary-color;
+        padding: 30px;
+        border-radius: 10px;
+        margin-bottom: 20px;
+
+        .summary-title-wrapper {
+            margin: 25px 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+    
+            p {
+                font-size: 20px;
+            }
+        }
+    
+        .result-wrapper {
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+    
+            .summary-score, .summary-statics {
+                width: 50%;
+                border: 1px solid $primary-color;
+                padding: 10px;
+                border-radius: 10px;
+    
+                h3 {
+                    margin-bottom: 5px;
+                }
+            }
+        }
+    }
+
+    #summary-que-wrapper {
+        width: 100%;
+        text-align: left;
+
+        .summary-que {
+            margin-bottom: 25px;
+            .que-wrapper {
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                font-size: 18px;
+
+                span {
+                    margin-right: 10px;
+                }
+            }
+
+            .summary-option-wrapper{
+                .summary-option {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    gap: 10px;
+                    margin: 2px 0;
+                    padding: 5px 10px;
+                    background-color: $base-color;
+                    border-radius: 8px;
+
+                    .fa-circle-check {
+                        color: $success;
+                    }
+                }
+            }
+        }
+    }
+}

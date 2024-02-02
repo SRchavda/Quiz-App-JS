@@ -1,0 +1,178 @@
+@import "./common.scss";
+@import "./constant.scss";
+
+.total-timer-wrapper {
+  margin-bottom: 25px;
+
+  p {
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    flex-direction: column;
+  }
+
+  span {
+    font-size: 20px;
+  }
+}
+
+#question-footer {
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  #ques-sum {
+    display: flex;
+    justify-content: start;
+
+    .toast-wrapper {
+      font-size: 15px;
+      padding: 5px 10px;
+      span {
+        padding-left: 5px;
+      }
+    }
+
+    #correct-wrapper {
+      background-color: $success-light;
+      border-radius: 5px 0px 0px 5px;
+    }
+
+    #incorrect-wrapper {
+      background-color: $danger;
+      border-radius: 0px 5px 5px 0px;
+    }
+  }
+
+  .next-btn {
+    span {
+      padding-left: 5px;
+    }
+  }
+}
+
+button.option:disabled {
+  pointer-events: none;
+}
+
+.option {
+  cursor: pointer;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 10px;
+  margin: 5px 0 5px 0;
+  width: 100%;
+
+  &:hover {
+    border-color: $primary-color;
+  }
+
+  .opt-number {
+    width: 10%;
+    text-align: center;
+    border-right: 1px solid whitesmoke;
+  }
+}
+
+#questionWrapper {
+  min-width: 60vw;
+  border: 1px solid $primary-color;
+  padding: 30px;
+  border-radius: 10px;
+
+  #question-body {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+
+    .que-content {
+      text-align: left;
+      width: 100%;
+    }
+
+    .ques-text {
+      font-size: 22px;
+    }
+  }
+}
+
+button.next-btn {
+  &:hover {
+    background-color: $primary-color;
+    color: $base-color;
+  }
+}
+
+#ques-feedback {
+  visibility: hidden;
+  min-width: 250px;
+  margin-left: -125px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  border-radius: 2px;
+  padding: 16px;
+  position: fixed;
+  z-index: 1;
+  left: 50%;
+  bottom: 30px;
+}
+
+#ques-feedback.show {
+  visibility: visible;
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+#ques-feedback.correct {
+    background-color: $success;
+}
+#ques-feedback.wrong {
+    background-color: $danger;
+}
+
+@-webkit-keyframes fadein {
+  from {
+    bottom: 0;
+    opacity: 0;
+  }
+  to {
+    bottom: 30px;
+    opacity: 1;
+  }
+}
+
+@keyframes fadein {
+  from {
+    bottom: 0;
+    opacity: 0;
+  }
+  to {
+    bottom: 30px;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeout {
+  from {
+    bottom: 30px;
+    opacity: 1;
+  }
+  to {
+    bottom: 0;
+    opacity: 0;
+  }
+}
+
+@keyframes fadeout {
+  from {
+    bottom: 30px;
+    opacity: 1;
+  }
+  to {
+    bottom: 0;
+    opacity: 0;
+  }
+}
