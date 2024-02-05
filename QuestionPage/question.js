@@ -234,7 +234,7 @@ function onNextClick() {
     localStorage.setItem("ansQue", JSON.stringify(answerdQue));
     localStorage.setItem("queSum", JSON.stringify(queSum));
 
-    location.href = "../Summary/summary.html";
+    location.href = "../Summary/index.html";
   }
 }
 
@@ -255,5 +255,5 @@ document.addEventListener("quizTimeUp", function () {
   localStorage.setItem("ansQue", JSON.stringify(answerdQue));
   localStorage.setItem("queSum", JSON.stringify(queSum));
 
-  location.href = "../Summary/summary.html";
+  location.href = "../Summary/index.html";
 });
