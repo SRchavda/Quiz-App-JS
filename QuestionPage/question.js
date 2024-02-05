@@ -12,9 +12,12 @@ const nextBtnStr = `
 `;
 
 const formData = new URLSearchParams(location.search);
-const level = formData.get("level");
-const category = formData.get("quiz_category");
-const noOfQues = formData.get("noOfQues");
+// const level = formData.get("level");
+// const category = formData.get("quiz_category");
+// const noOfQues = formData.get("noOfQues");
+const { noOfQues, level, category } = JSON.parse(
+  localStorage.getItem("formValue")
+);
 const totalTime = noOfQues * 60; //seconds
 
 localStorage.setItem("totalQue", noOfQues);

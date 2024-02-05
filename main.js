@@ -58,5 +58,26 @@ const firstPage = `
   </div>
 `;
 
+const formm = document.forms["quizForm"];
+
+console.log(formm);
+
+formm.addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  const noOfQues = formm.elements["noOfQues"].value;
+  const category = formm.elements["quiz_category"].value;
+  const level = formm.elements["level"].value;
+
+  const form = {
+    noOfQues: noOfQues,
+    level: level,
+    category: category,
+  };
+  localStorage.setItem("formValue", JSON.stringify(form));
+
+  location.href = "./QuestionPage/index.html";
+});
+
 // document.querySelector('#app').innerHTML = firstPage;
 // setUpForm(document.querySelector("#submitBtn"));
